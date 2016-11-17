@@ -15,7 +15,7 @@ module.exports = function(grunt){
         sync: {
             theme: {
                 files: [
-                    { cwd: 'GeometricColor/', src: ['**/*.js', '**/*.css', '**/*.php'], dest: 'C:\wamp64\www\doortjespanjerberg\wp-content\themes\GeometricColor'} // makes all src relative to cwd 
+                    { cwd: 'GeometricColor/', src: ['**/*.js', '**/*.css', '**/*.php'], dest: 'C:/wamp64/www/doortjespanjerberg/wp-content/themes/GeometricColor'} // makes all src relative to cwd 
                 ],
                 verbose: true, // Default: false 
                 failOnError: true, // Fail the task when copying is not possible. Default: false 
@@ -58,7 +58,7 @@ module.exports = function(grunt){
             },
             target: {
                 files: {
-                  'C:\wamp64\www\doortjespanjerberg\wp-content\themes\GeometricColor': ['css/style.css']
+                  'C:/wamp64/www/doortjespanjerberg/wp-content/themes/GeometricColor/style.css': ['css/style.css']
                 }
               }
             },
@@ -68,7 +68,7 @@ module.exports = function(grunt){
                 files: [
                     { expand: true, mangle: false, cwd: 'TangerineZebra/', 
                     src: ['**/*.js'], 
-                    dest: 'C:\wamp64\www\doortjespanjerberg\wp-content\themes\GeometricColor/js/'}
+                    dest: 'C:/wamp64/www/doortjespanjerberg/wp-content/themes/GeometricColor/js'}
                     ]
                 }
             },
