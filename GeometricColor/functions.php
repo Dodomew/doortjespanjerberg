@@ -33,17 +33,6 @@
     add_image_size( 'feature-image', 960, 540, true ); 
     add_image_size( 'medium-thumb', 350, 350, true );
 
-    // Define additional "post thumbnails". Relies on MultiPostThumbnails to work
-    if (class_exists('MultiPostThumbnails')) {
-        new MultiPostThumbnails(array(
-            'label' => '2nd Feature Image',
-            'id' => 'feature-image-2',
-            'post_type' => 'post'
-            )
-        );
-    }
-
-
     //set x number of posts per page
     function set_posts_per_page( $query ) {
       if ( !is_admin() && $query->is_main_query() ) {
