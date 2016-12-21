@@ -46,9 +46,9 @@
         remove_action('wp_head', '_admin_bar_bump_cb');
     }
 
-    function body_class( $class = '' ) {
+    /*function body_class( $class = '' ) {
         // Separates classes with a single space, collates classes for body element
         echo 'class="' . join( ' ', get_body_class( $class ) ) . '"';
-    }
+    }*/
 
 ?>
