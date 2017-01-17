@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(/imagesOnSite/Site_Icons_Spritesheet_165.png);
+@import url(/imagesOnSite/Site_Icons_Spritesheet_165_64.png);
+@import url(/imagesOnSite/Site_Icons_Spritesheet_165_32.png);
+@media (max-device-width: 720px) {
+  /* line 19, Z:/Sites/Site - Doortjespanjerberg/partials/_icons.scss */
+  #about-me-icon {
+    background-image: url("imagesOnSite/Site_Icons_Spritesheet_165_64.png");
+    background-position: 0px -192px;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 10;
+    border-bottom: 2px solid darkgrey; }
+  /* line 24, Z:/Sites/Site - Doortjespanjerberg/partials/_icons.scss */
+  #two-dee-icon {
+    background-image: url("imagesOnSite/Site_Icons_Spritesheet_165_64.png");
+    background-position: 0px -256px;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 10;
+    border-bottom: 2px solid darkgrey; }
+  /* line 29, Z:/Sites/Site - Doortjespanjerberg/partials/_icons.scss */
+  #three-dee-icon {
+    background-image: url("imagesOnSite/Site_Icons_Spritesheet_165_64.png");
+    background-position: 0px -320x;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 10;
+    border-bottom: 2px solid darkgrey; }
+  /* line 34, Z:/Sites/Site - Doortjespanjerberg/partials/_icons.scss */
+  #webdesign-icon {
+    background-image: url("imagesOnSite/Site_Icons_Spritesheet_165_64.png");
+    background-position: 0px -384px;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 10;
+    border-bottom: 2px solid darkgrey; }
+  /* line 39, Z:/Sites/Site - Doortjespanjerberg/partials/_icons.scss */
+  .icon-container {
+    display: none; } }
+
+/*# sourceMappingURL=_icons.css.map */

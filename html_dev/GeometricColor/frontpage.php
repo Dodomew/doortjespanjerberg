@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
 
-    <head>
+<?php
+/**
+ * The front page template file
+ *
+ * If the user has selected a static page for their homepage, this is what will
+ * appear.
+ * Learn more: https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage GeometricColor
+ * @since 1.0
+ * @version 1.0
+ */
 
-        <meta charset="utf-8">
-        <title>Doortje Spanjerberg Portfolio</title>
-        <meta name="description" content="Portfolio site of Doortje Spanjerberg, Front-End Developer">
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-        <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-        <?php wp_head();?>
-
-    </head>
-
-    <body>
+get_header(); ?>
 
         <div class="content-container-frontpage">
 
@@ -41,7 +42,7 @@
 
                         <div class="column-images column-float">
 
-                            <a href="<?php the_permalink() ?>"><div class="invis-rectangle"></div><div id="rectangle-red"></div></a>
+                            <a href="<?php echo get_page_link( get_page_by_title( 'About me' )->ID ); ?>"><div class="invis-rectangle"></div><div id="rectangle-red"></div></a>
 
                                 <div class="column-hover">
 
@@ -170,11 +171,11 @@
 
                         </div>
 
-                    </div>
+                    </article>
 
-                </div>
+              </div>
 
-            </article>
+        </div>
 
     </body>
 

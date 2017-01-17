@@ -354,6 +354,50 @@ a
     }
 }
 
+/*
+Category/Projects pages
+*/
+
+.content-container
+{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: purple;
+}
+
+.content-aside-container
+{
+  float: left;
+  width: 33.3%;
+  height: auto;
+  background-color: red;
+}
+
+.content-main-container
+{
+  float: right;
+  width: 66.7%;
+  height: auto;
+  background-color: blue;
+}
+
+.content-header-container
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: yellow;
+}
+
+.content-footer-container
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: yellow;
+}
+
 /* Image Gallery */
 .wrap-images
 {
