@@ -1,0 +1,16 @@
+//All other pages and their content
+
+@import "base";
+
+@mixin content-body($color)
+{
+    height: 100%;
+    width: 100%;
+    margin: auto 0px;
+    z-index: 1;
+    position: relative;
+    background-color: $color;
+    color: whitesmoke;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
