@@ -23,8 +23,6 @@
 
                     <article class="column hvr-fade-red">
 
-                        <a href="<?php the_permalink() ?>">
-
                             <header class="title-page">
 
                               <figure class="icon-container">
@@ -37,11 +35,9 @@
 
                             </header>
 
-                        </a>
-
                         <div class="column-images column-float">
 
-                            <a href="<?php the_permalink() ?>"><div class="invis-rectangle"></div><div id="rectangle-red"></div></a>
+                            <a href="category/about-me/"><div class="invis-rectangle"></div><div id="rectangle-red"></div></a>
 
                                 <div class="column-hover">
 
@@ -75,8 +71,6 @@
 
                     <article class="column hvr-fade-amber">
 
-                        <a href="webdev.html">
-
                           <header class="title-page">
 
                             <figure class="icon-container">
@@ -89,13 +83,11 @@
 
                             </header>
 
-                          </a>
-
                         <div class="column-images column-float">
 
                             <div class="column-hover">
 
-                                <a href="webdev.html"><div class="invis-rectangle"></div><div id="rectangle-gold"></div></a>
+                                <a href="category/webdev/"><div class="invis-rectangle"></div><div id="rectangle-gold"></div></a>
 
                                     <?php
 
@@ -144,7 +136,7 @@
 
                             <div class="column-hover">
 
-                                <a href="2D_3D_art.html"><div class="invis-rectangle"></div><div id="rectangle-purple"></div></a>
+                                <a href="category/2d-3d/"><div class="invis-rectangle"></div><div id="rectangle-purple"></div></a>
 
                                     <?php
 
