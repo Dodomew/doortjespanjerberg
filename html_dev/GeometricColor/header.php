@@ -14,11 +14,3 @@
     </head>
 
     <body>
-
-      <header class="content-header-container">
-
-        <h1>Ik ben de header.</h1>
-
-      </header>
-
-      <div class="content-container">

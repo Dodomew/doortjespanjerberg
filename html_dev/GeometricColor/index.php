@@ -7,15 +7,15 @@
 
 ?>
 
-    <?php
+    <?php 
 
     if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-    if  ( is_front_page() )
-    {
+    if  ( is_front_page() ) 
+    { 
         get_template_part( 'frontpage' );
     }
-    else
+    else 
     {
         get_template_part( 'content' );
     }
@@ -25,8 +25,8 @@
     ?>
 
     <?php
-        endif;
-    ?>
+        endif; 
+    ?>  
 
 <?php
 
