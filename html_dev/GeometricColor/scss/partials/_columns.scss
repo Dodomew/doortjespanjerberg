@@ -2,27 +2,132 @@
 
 @import "base";
 
-@mixin column-rectangle($rectangle-color)
+/* Columns */
+
+.column
 {
-    width: 100%;
-    height: 10%;
-    background-color: $rectangle-color;
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  padding-top: 5%;
+  z-index: 100;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
 }
 
-@mixin column-float($moveSpeed)
+.column:hover .column-float
 {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: $moveSpeed;
-    transition-duration: $moveSpeed;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
+     -webkit-transform: translateY(-45%);
+    transform: translateY(-45%);
+}
+
+.column-images
+{
+    height: 100%;
+    width: 100%;
+}
+
+.column-images img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.column-hover
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.column-float
+{
+    @include column-float(0.5s);
+}
+
+.invis-rectangle
+{
+    height: 55%;
+}
+
+@media (min-width: 10px) and (max-width: 1280px)
+{
+    .invis-rectangle
+    {
+        height: 60%;
+    }
+}
+
+#rectangle-red
+{
+    @include column-rectangle($color-background-red);
+}
+
+#rectangle-gold
+{
+    @include column-rectangle($color-background-yellow);
+}
+
+#rectangle-purple
+{
+    @include column-rectangle($color-background-purple);
+}
+
+#rectangle-green
+{
+    @include column-rectangle($color-background-green);
+}
+
+.title-page
+{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin-top: 25%;
+}
+
+.title-page h3
+{
+    text-align: center;
+    font-family: $font-normal;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    padding: 1vh;
+}
+
+#about-me-icon
+{
+    @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-384px), 128px);
+}
+
+#two-dee-icon
+{
+    @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-512px), 128px);
+}
+
+#three-dee-icon
+{
+   @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-640px), 128px);
+}
+
+#webdesign-icon
+{
+    @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-768px), 128px);
+}
+
+.icon-container
+{
+    display: block;
 }

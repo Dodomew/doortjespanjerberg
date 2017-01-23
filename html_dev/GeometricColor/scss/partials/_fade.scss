@@ -1,0 +1,27 @@
+/* Fade */
+
+@import "base";
+
+.hvr-fade-red:hover, .hvr-fade-red:focus, .hvr-fade-red:active
+{
+  background-color: $color-background-red-onHover;
+  color: $color-typography-white;
+}
+
+.hvr-fade-amber:hover, .hvr-fade-amber:focus, .hvr-fade-amber:active
+{
+  background-color: $color-background-yellow-onHover;
+  color: $color-typography-white;
+}
+
+.hvr-fade-purple:hover, .hvr-fade-purple:focus, .hvr-fade-purple:active
+{
+  background-color: $color-background-purple-onHover;
+  color: $color-typography-white;
+}
+
+.hvr-fade-green:hover, .hvr-fade-green:focus, .hvr-fade-green:active
+{
+  background-color: $color-background-green-onHover;
+  color: $color-typography-white;
+}

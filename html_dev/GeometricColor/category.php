@@ -1,16 +1,22 @@
-<?php get_header(); ?>
+	<?php get_header(); ?>
 
-<div class="content-overview-<?php print (get_the_category()[0]->slug)  ?>">
+	<?php get_sidebar(); ?>
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+	<main class="content-overview-posts">
 
-				get_template_part( 'content-overview', get_post_format() );
+			<?php
+			// Start the loop.
+			while ( have_posts() ) : the_post();
 
-		endwhile;
-		?>
+					get_template_part( 'content-overview', get_post_format() );
+
+			endwhile;
+			?>
+
+	</main>
+
+</main>
+
+	<?php get_footer(); ?>
+
 </div>
-<?php
-
-get_footer();

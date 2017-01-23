@@ -14,3 +14,27 @@
     </head>
 
     <body>
+
+      <div class="content-overview-<?php print (get_the_category()[0]->slug)  ?>">
+
+        <header class="content-header">
+
+          <section class="content-header-container">
+
+            <section class="content-header-left">
+
+              <h1>Hier moet category/project naam staan</h1>
+
+            </section>
+
+            <section class="content-header-right">
+
+              <h1>Hier moet site logo staan</h1>
+
+            </section>
+
+          </section>
+
+        </header>
+
+        <main class="sidebar-and-posts-container">

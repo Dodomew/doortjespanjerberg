@@ -1,0 +1,35 @@
+/*sidebar */
+
+.sidebar-container
+{
+  float: left;
+  width: 25%;
+  height: auto;
+  margin-top: 5%;
+  margin-top: 5vh;
+  background-color: orange;
+  border-bottom: 5px solid white;
+}
+
+.sidebar-content-container
+{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: yellow;
+  margin-bottom: 2.5%;
+  margin-bottom: 2.5vh;
+}
+
+.sidebar-content-social-container
+{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: orange;
+}
+
+.sidebar-content-social-container figure
+{
+  display: inline-block;
+}

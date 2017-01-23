@@ -1,0 +1,26 @@
+/* blogpost */
+
+.blog-post
+{
+  width: 90%;
+  height: 33.33%;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-bottom: 5vh;
+  background-color: grey;
+  @include boxshadow(17px, 0px);
+}
+
+.blog-thumbnail
+{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.blog-thumbnail img
+{
+  width: 100%;
+  height: auto;
+}

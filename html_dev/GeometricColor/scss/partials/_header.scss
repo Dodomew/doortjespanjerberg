@@ -1,0 +1,40 @@
+/* header */
+
+.content-header
+{
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  background-color: blue;
+}
+
+.content-header-container
+{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  border-bottom: 5px solid white;
+}
+
+.content-header-left
+{
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: green;
+}
+
+.content-header-right
+{
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: pink;
+}
+
+.sidebar-and-posts-container
+{
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
