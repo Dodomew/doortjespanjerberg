@@ -15,25 +15,25 @@ Pellentesque dignissim, libero id pretium porttitor, erat leo ultrices ante, vel
 
     <figure>
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/facebook_logo_white.svg" alt="facebook white logo">
 
     </figure>
 
     <figure>
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/github_logo_white.svg" alt="github white logo">
 
     </figure>
 
     <figure>
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/instagram_logo_white.svg" alt="instagram white logo">
 
     </figure>
 
     <figure>
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/mail_logo_white.svg" alt="mail white logo">
 
     </figure>
 

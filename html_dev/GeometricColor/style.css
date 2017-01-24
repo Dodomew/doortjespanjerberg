@@ -292,7 +292,7 @@ time, mark, audio, video {
 }
 
 .content-header-left {
-  width: 50%;
+  width: 75%;
   height: 100%;
   float: left;
   display: flex;
@@ -305,11 +305,20 @@ time, mark, audio, video {
 }
 
 .content-header-right {
-  width: 50%;
+  width: 25%;
   height: 100%;
   float: right;
   display: flex;
   align-items: center;
+}
+
+.content-header-right figure {
+  width: 90%;
+  margin: auto;
+}
+
+.content-header-right figure img {
+  width: 90%;
 }
 
 .sidebar-and-posts-container {
@@ -357,6 +366,11 @@ time, mark, audio, video {
 
 .sidebar-content-social-container figure {
   width: 25%;
+  text-align: center;
+}
+
+.sidebar-content-social-container figure img {
+  width: 50%;
 }
 
 /* blogpost */

@@ -28,7 +28,7 @@ module.exports = function(grunt)
             [
                 {
                   cwd: 'html_dev/GeometricColor', //I sync files in this location
-                  src: ['**/*.js', '**/*.css', '**/*.php', '**/*.html', '**/*.jpg', '**/*.png', //check all files with these extensions
+                  src: ['**/*.js', '**/*.css', '**/*.php', '**/*.html', '**/*.jpg', '**/*.png', '**/*.svg', //check all files with these extensions
                   '!**/node_modules/**' /* but exclude txt files */ ],
                   dest: 'C:/wamp64/www/doortjespanjerberg/wp-content/themes/GeometricColor' //any output I make is put in here
                 } // makes all src relative to Current Working Directory or cwd
@@ -45,7 +45,7 @@ module.exports = function(grunt)
             [
                 {
                   cwd: 'html_dev/GeometricColor', //I sync files in this location
-                  src: ['**/*.js', '**/*.css', '**/*.php', '**/*.html', '**/*.jpg', '**/*.png'],
+                  src: ['**/*.js', '**/*.css', '**/*.php', '**/*.html', '**/*.jpg', '**/*.png', '**/*.svg'],
                   dest: 'C:/wamp64/www/doortjespanjerberg/wp-content/themes/GeometricColor'
               } 	// makes all src relative to cwd
             ],

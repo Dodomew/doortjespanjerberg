@@ -27,7 +27,11 @@
 
           <section class="content-header-right">
 
-            <h1>Hier moet site logo staan</h1>
+            <figure> <!-- Circle, triangle and square logo icon -->
+
+              <img src="<?php bloginfo('template_directory');?>/images/icons/spanjerberg_portfolio_icon_logo_circleSquareTriangle.svg" alt="Circle, triangle and square logo">
+
+            </figure>
 
           </section>
 
