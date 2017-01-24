@@ -15,7 +15,25 @@ Pellentesque dignissim, libero id pretium porttitor, erat leo ultrices ante, vel
 
     <figure>
 
-      Hier staan social media icons
+      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+
+    </figure>
+
+    <figure>
+
+      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+
+    </figure>
+
+    <figure>
+
+      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
+
+    </figure>
+
+    <figure>
+
+      <img src="<?php bloginfo('template_directory');?>/images/icons/FB-f-Logo__white_100.png" alt="facebook white logo">
 
     </figure>
 

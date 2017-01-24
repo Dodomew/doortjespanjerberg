@@ -3,12 +3,12 @@
 .blog-post
 {
   width: 90%;
-  height: 33.33%;
+  height: 33.33vh;
   margin: auto;
   margin-bottom: 5%;
   margin-bottom: 5vh;
   background-color: grey;
-  @include boxshadow(17px, 0px);
+  @include boxshadow(10px, 0px);
 }
 
 .blog-thumbnail
@@ -22,5 +22,5 @@
 .blog-thumbnail img
 {
   width: 100%;
-  height: auto;
+  overflow-y: hidden;
 }

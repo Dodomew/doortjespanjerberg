@@ -3,9 +3,8 @@
 .content-header
 {
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   margin: auto;
-  background-color: blue;
 }
 
 .content-header-container
@@ -13,7 +12,7 @@
   width: 90%;
   height: 100%;
   margin: auto;
-  border-bottom: 5px solid white;
+  @include borderBottom(1px);
 }
 
 .content-header-left
@@ -21,7 +20,14 @@
   width: 50%;
   height: 100%;
   float: left;
-  background-color: green;
+  display: flex;
+  align-items: center;
+}
+
+.content-header-left h1
+{
+  font-weight: 400;
+  font-size: 5em;
 }
 
 .content-header-right
@@ -29,7 +35,8 @@
   width: 50%;
   height: 100%;
   float: right;
-  background-color: pink;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar-and-posts-container

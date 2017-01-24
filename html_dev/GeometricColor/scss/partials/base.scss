@@ -19,8 +19,8 @@ $color-background-green-onHover: rgb(76,175,80);
 
 //Colors used for typography or borders
 $color-typography-darkgrey: darkgrey;
-$color-typography-white: white;
-$color-typography-whitesmoke: whitesmoke;
+$color-typography-white: #FAFAFA;
+$color-typography-whitesmoke: #DCDCDC;
 
 //Icons and images
 
@@ -102,4 +102,17 @@ $color-typography-whitesmoke: whitesmoke;
   -webkit-box-shadow: 0px 0px $blurRadius $spreadRadius rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px $blurRadius $spreadRadius rgba(0,0,0,0.75);
   box-shadow: 0px 0px $blurRadius $spreadRadius rgba(0,0,0,0.75);
+}
+
+@mixin borderBottom($thickness)
+{
+  border-bottom: $thickness solid $color-typography-whitesmoke;
+}
+
+@mixin textSizeAdjust($adjust)
+{
+  -moz-text-size-adjust: $adjust;
+  -webkit-text-size-adjust: $adjust;
+  -ms-text-size-adjust: $adjust;
+  text-size-adjust: $adjust;
 }

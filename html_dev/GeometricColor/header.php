@@ -13,28 +13,26 @@
 
     </head>
 
-    <body>
+    <body class="content-overview-<?php print (get_the_category()[0]->slug)  ?>">
 
-      <div class="content-overview-<?php print (get_the_category()[0]->slug)  ?>">
+      <header class="content-header">
 
-        <header class="content-header">
+        <section class="content-header-container">
 
-          <section class="content-header-container">
+          <section class="content-header-left">
 
-            <section class="content-header-left">
-
-              <h1>Hier moet category/project naam staan</h1>
-
-            </section>
-
-            <section class="content-header-right">
-
-              <h1>Hier moet site logo staan</h1>
-
-            </section>
+            <h1><?php single_cat_title(); ?></h1>
 
           </section>
 
-        </header>
+          <section class="content-header-right">
 
-        <main class="sidebar-and-posts-container">
+            <h1>Hier moet site logo staan</h1>
+
+          </section>
+
+        </section>
+
+      </header>
+
+      <main class="sidebar-and-posts-container">

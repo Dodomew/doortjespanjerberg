@@ -7,29 +7,40 @@
   height: auto;
   margin-top: 5%;
   margin-top: 5vh;
-  background-color: orange;
-  border-bottom: 5px solid white;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 2em;
 }
 
 .sidebar-content-container
 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 2.5%;
+  margin-bottom: 2.5vh;
+  @include borderBottom(1px);
+}
+
+.sidebar-content-container p
+{
   width: 80%;
   height: auto;
   margin: auto;
-  background-color: yellow;
-  margin-bottom: 2.5%;
-  margin-bottom: 2.5vh;
+  margin-bottom: 5vh;
 }
 
 .sidebar-content-social-container
 {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
-  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar-content-social-container figure
 {
-  display: inline-block;
+    width: 25%;
 }

@@ -1,6 +1,6 @@
-	<?php get_header(); ?>
+<?php get_header(); ?>
 
-	<?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 
 	<main class="content-overview-posts">
 
@@ -17,6 +17,4 @@
 
 </main>
 
-	<?php get_footer(); ?>
-
-</div>
+<?php get_footer(); ?>
