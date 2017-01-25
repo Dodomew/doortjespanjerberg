@@ -69,7 +69,7 @@
 
                     </article>
 
-                    <article class="column hvr-fade-amber">
+                    <article class="column hvr-fade-green">
 
                           <header class="title-page">
 
@@ -87,7 +87,7 @@
 
                             <div class="column-hover">
 
-                                <a href="category/webdev/"><div class="invis-rectangle"></div><div id="rectangle-gold"></div></a>
+                                <a href="category/webdev/"><div class="invis-rectangle"></div><div id="rectangle-green"></div></a>
 
                                     <?php
 
@@ -115,7 +115,7 @@
 
                     </article>
 
-                    <article class="column hvr-fade-purple">
+                    <article class="column hvr-fade-blue">
 
                         <a href="2D_3D_art.html">
 
@@ -136,7 +136,7 @@
 
                             <div class="column-hover">
 
-                                <a href="category/2d-3d/"><div class="invis-rectangle"></div><div id="rectangle-purple"></div></a>
+                                <a href="category/2d3d/"><div class="invis-rectangle"></div><div id="rectangle-blue"></div></a>
 
                                     <?php
 

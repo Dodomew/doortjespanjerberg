@@ -25,3 +25,9 @@
   background-color: $color-background-green-onHover;
   color: $color-typography-white;
 }
+
+.hvr-fade-blue:hover, .hvr-fade-blue:focus, .hvr-fade-blue:active
+{
+  background-color: $color-background-blue-onHover;
+  color: $color-typography-white;
+}

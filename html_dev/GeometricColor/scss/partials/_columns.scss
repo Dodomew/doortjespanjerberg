@@ -79,6 +79,11 @@
     @include column-rectangle($color-background-yellow);
 }
 
+#rectangle-blue
+{
+    @include column-rectangle($color-background-blue);
+}
+
 #rectangle-purple
 {
     @include column-rectangle($color-background-purple);
