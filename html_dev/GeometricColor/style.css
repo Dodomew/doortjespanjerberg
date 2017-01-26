@@ -386,8 +386,8 @@ time, mark, audio, video {
 
 /* blogpost */
 .blog-post {
-  width: 90%;
-  height: 33.33vh;
+  width: 960px;
+  height: 540px;
   margin: auto;
   margin-bottom: 5%;
   margin-bottom: 5vh;
@@ -406,7 +406,6 @@ time, mark, audio, video {
 
 .blog-thumbnail img {
   width: 100%;
-  overflow-y: hidden;
 }
 
 /* category main content */

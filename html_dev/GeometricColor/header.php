@@ -21,7 +21,20 @@
 
           <section class="content-header-left">
 
-            <h1><?php single_cat_title(); ?></h1>
+            <?php
+
+              $current_category = single_cat_title("", false);
+
+              if($current_category != "")
+              {
+                echo "<h1>" . $current_category . "</h1>";
+              }
+              else
+              {
+                ?><h1><?php single_post_title(); ?></h1>
+                <?php
+              }
+            ?>
 
           </section>
 
