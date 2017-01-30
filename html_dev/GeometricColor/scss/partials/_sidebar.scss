@@ -3,13 +3,17 @@
 .sidebar-container
 {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: auto;
   margin-top: 5%;
   margin-top: 5vh;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 200%;
+  font-size: 2rem;
   line-height: 2em;
+  @include respond-to(xxsmall, 100%, auto);
+  @include respond-to(xsmall, 100%, auto);
+  @include responsiveFont(xxsmall, 100%, 1rem);
 }
 
 .sidebar-content-container

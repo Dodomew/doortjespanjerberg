@@ -3,7 +3,7 @@
 .content-header
 {
   width: 100%;
-  height: 15vh;
+  height: 15%;
   margin: auto;
 }
 
@@ -27,7 +27,9 @@
 .content-header-left h1
 {
   font-weight: 400;
-  font-size: 5em;
+  font-size: 800%;
+  font-size: 8rem;
+  @include responsiveFont(xxsmall, 400%, 4rem);
 }
 
 .content-header-right

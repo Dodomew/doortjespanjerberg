@@ -24,8 +24,13 @@
 .content-overview-posts
 {
   float: right;
-  width: 75%;
-  height: 100%;
+  width: 66.67%;
+  min-height: 100%;
+  min-height: 100vh;
   margin-top: 5%;
   margin-top: 5vh;
+  @include respond-to(xxsmall, 100%, auto);
+  @include respond-to(xsmall, 100%, auto);
 }
+
+/* breakpoints */

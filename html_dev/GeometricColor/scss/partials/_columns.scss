@@ -23,6 +23,8 @@
   transition-duration: 0.3s;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
+  @include respond-to(xxsmall, 100%, 33.33%);
+  @include respond-to(xsmall, 100%, 33.33%);
 }
 
 .column:hover .column-float
@@ -107,7 +109,8 @@
     text-align: center;
     font-family: $font-normal;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 150%;
+    font-size: 1.5rem;
     letter-spacing: 0.15em;
     padding: 1vh;
 }

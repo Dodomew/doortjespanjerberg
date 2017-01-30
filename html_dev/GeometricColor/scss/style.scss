@@ -32,6 +32,7 @@ html,body
     font-family: $font-normal;
     color: $color-typography-white;
     @include textSizeAdjust(auto);
+    font-size: 62.5%; /* 62.5% of 16px = 10px */
 }
 
 a
@@ -58,6 +59,7 @@ a
     width: 100%;
 }
 
+/*
 #header-wrapper-frontpage
 {
     text-align: center;
@@ -79,6 +81,7 @@ a
         background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min_128.png);
     }
 }
+*/
 
 /* All other pages */
 
@@ -102,6 +105,7 @@ a
     @include content-body($color-background-green);
 }
 
+/*
 .header-wrapper
 {
     width: 100%;
@@ -119,6 +123,7 @@ a
     background-size: contain;
     background-position: right;
 }
+*/
 
 .content-body-container
 {
@@ -137,7 +142,8 @@ a
 
 .other-pages-maintext h1
 {
-    font-size: 4em;
+    //font-size: 4em;
+    font-size: 4rem;
     text-align: left;
     margin-bottom: 2.5vh;
     z-index: 1;
@@ -169,7 +175,8 @@ a
     line-height: 2em;
     z-index: 1;
     font-weight: 300;
-    font-size: 1.6em;
+    //font-size: 1.6em;
+    font-size: 1rem;
     letter-spacing: 0.05em;
     color: $color-typography-whitesmoke;
 }

@@ -145,6 +145,18 @@ time, mark, audio, video {
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .column {
+    width: 100%;
+    height: 33.33%;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  .column {
+    width: 320px;
+    height: 180px;
+  }
+}
 
 .column:hover .column-float {
   -webkit-transform: translateY(-45%);
@@ -235,7 +247,8 @@ time, mark, audio, video {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 150%;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
   padding: 1vh;
 }
@@ -291,7 +304,7 @@ time, mark, audio, video {
 /* header */
 .content-header {
   width: 100%;
-  height: 15vh;
+  height: 15%;
   margin: auto;
 }
 
@@ -312,7 +325,14 @@ time, mark, audio, video {
 
 .content-header-left h1 {
   font-weight: 400;
-  font-size: 5em;
+  font-size: 800%;
+  font-size: 8rem;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-header-left h1 {
+    font-size: 400%;
+    font-size: 4rem;
+  }
 }
 
 .content-header-right {
@@ -341,13 +361,32 @@ time, mark, audio, video {
 /*sidebar */
 .sidebar-container {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: auto;
   margin-top: 5%;
   margin-top: 5vh;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 200%;
+  font-size: 2rem;
   line-height: 2em;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .sidebar-container {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  .sidebar-container {
+    width: 320px;
+    height: 180px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .sidebar-container {
+    font-size: 100%;
+    font-size: 1rem;
+  }
 }
 
 .sidebar-content-container {
@@ -386,8 +425,8 @@ time, mark, audio, video {
 
 /* blogpost */
 .blog-post {
-  width: 960px;
-  height: 540px;
+  width: 90%;
+  height: 100%;
   margin: auto;
   margin-bottom: 5%;
   margin-bottom: 5vh;
@@ -398,14 +437,45 @@ time, mark, audio, video {
 }
 
 .blog-thumbnail {
-  width: 100%;
-  height: 100%;
+  width: 960px;
+  height: 540px;
   margin: auto;
   overflow: hidden;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .blog-thumbnail {
+    width: 240px;
+    height: 160px;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  .blog-thumbnail {
+    width: 320px;
+    height: 180px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .blog-thumbnail {
+    width: 580px;
+    height: 300px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .blog-thumbnail {
+    width: 720px;
+    height: 405px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .blog-thumbnail {
+    width: 848px;
+    height: 480px;
+  }
+}
 
 .blog-thumbnail img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* category main content */
@@ -429,12 +499,26 @@ time, mark, audio, video {
 
 .content-overview-posts {
   float: right;
-  width: 75%;
-  height: 100%;
+  width: 66.67%;
+  min-height: 100%;
+  min-height: 100vh;
   margin-top: 5%;
   margin-top: 5vh;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-overview-posts {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 766px) {
+  .content-overview-posts {
+    width: 320px;
+    height: 180px;
+  }
+}
 
+/* breakpoints */
 @media (max-device-width: 720px) {
   .footer-logos-fb {
     background-image: url("imagesOnSite/Site_Icons_Spritesheet_165_32.png");
@@ -586,6 +670,8 @@ html, body {
   -webkit-text-size-adjust: auto;
   -ms-text-size-adjust: auto;
   text-size-adjust: auto;
+  font-size: 62.5%;
+  /* 62.5% of 16px = 10px */
 }
 
 a {
@@ -608,24 +694,29 @@ a {
   width: 100%;
 }
 
-#header-wrapper-frontpage {
-  text-align: center;
-  height: 128px;
-  width: 100%;
-  position: absolute;
-  z-index: 200;
-  background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+/*
+#header-wrapper-frontpage
+{
+    text-align: center;
+    height: 128px;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-@media only screen and (max-device-width: 780px) {
-  #header-wrapper-frontpage {
-    height: 64px;
-    background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min_128.png);
-  }
+@media only screen and (max-device-width : 780px)
+{
+    #header-wrapper-frontpage
+    {
+        height: 64px;
+        background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min_128.png);
+    }
 }
+*/
 /* All other pages */
 .content-body-red {
   height: 100%;
@@ -675,22 +766,25 @@ a {
   overflow-x: hidden;
 }
 
-.header-wrapper {
-  width: 100%;
-  height: 10vh;
-  text-align: center;
-  position: relative;
+/*
+.header-wrapper
+{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    position: relative;
 }
 
-.header-wrapper-logo {
-  width: 100%;
-  height: 100%;
-  background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+.header-wrapper-logo
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
-
+*/
 .content-body-container {
   width: 70%;
   min-height: 100%;
@@ -705,7 +799,7 @@ a {
 }
 
 .other-pages-maintext h1 {
-  font-size: 4em;
+  font-size: 4rem;
   text-align: left;
   margin-bottom: 2.5vh;
   z-index: 1;
@@ -733,7 +827,7 @@ a {
   line-height: 2em;
   z-index: 1;
   font-weight: 300;
-  font-size: 1.6em;
+  font-size: 1rem;
   letter-spacing: 0.05em;
   color: #DCDCDC;
 }
