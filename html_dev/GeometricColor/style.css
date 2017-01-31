@@ -127,45 +127,34 @@ time, mark, audio, video {
 
 /* Columns */
 .column {
-  float: left;
   width: 33.33%;
   height: 100%;
   position: relative;
-  padding-top: 5%;
   z-index: 100;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  /*
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
+  */
   overflow: hidden;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
-@media (min-width: 320px) and (max-width: 480px) {
-  .column {
-    width: 100%;
-    height: 33.33%;
-  }
-}
-@media (min-width: 480px) and (max-width: 766px) {
-  .column {
-    width: 320px;
-    height: 180px;
-  }
-}
 
 .column:hover .column-float {
-  -webkit-transform: translateY(-45%);
-  transform: translateY(-45%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .column-images {
   height: 100%;
   width: 100%;
+  display: block;
 }
 
 .column-images img {
@@ -189,23 +178,16 @@ time, mark, audio, video {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.65s;
+  transition-duration: 0.65s;
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  display: block;
+  transform: translateY(70%);
 }
 
-.invis-rectangle {
-  height: 55%;
-}
-
-@media (min-width: 10px) and (max-width: 1280px) {
-  .invis-rectangle {
-    height: 60%;
-  }
-}
 #rectangle-red {
   width: 100%;
   height: 10%;
@@ -239,8 +221,8 @@ time, mark, audio, video {
 .title-page {
   position: relative;
   width: 100%;
-  height: 15%;
-  margin-top: 25%;
+  height: 25%;
+  display: flex;
 }
 
 .title-page h3 {
@@ -251,6 +233,28 @@ time, mark, audio, video {
   font-size: 1.5rem;
   letter-spacing: 0.15em;
   padding: 1vh;
+}
+
+.title-page-rectangle {
+  width: 0%;
+  height: 0%;
+}
+
+.rectangle-red {
+  background-color: #ff5252;
+}
+
+.rectangle-green {
+  background-color: #00c853;
+}
+
+.rectangle-blue {
+  background-color: #2196F3;
+}
+
+.category-icon {
+  z-index: 10;
+  margin: 0 auto;
 }
 
 #about-me-icon {
@@ -301,6 +305,52 @@ time, mark, audio, video {
   display: block;
 }
 
+.frontpage-category-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .column {
+    width: 100%;
+    height: 33.33%;
+    padding: 0 0 0 0;
+  }
+
+  .column-images.column-float {
+    display: none;
+  }
+
+  .title-page {
+    height: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .icon-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .frontpage-category-title {
+    width: 50%;
+  }
+
+  .content-container-frontpage {
+    flex-direction: column;
+  }
+
+  .title-page-rectangle {
+    width: 20%;
+    height: 100%;
+  }
+
+  #about-me-icon {
+    border-bottom: 0px solid white;
+  }
+}
 /* header */
 .content-header {
   width: 100%;
@@ -687,6 +737,9 @@ a {
   overflow: hidden;
   background-color: #141414;
   color: darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-divider {
@@ -694,225 +747,6 @@ a {
   width: 100%;
 }
 
-/*
-#header-wrapper-frontpage
-{
-    text-align: center;
-    height: 128px;
-    width: 100%;
-    position: absolute;
-    z-index: 200;
-    background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-@media only screen and (max-device-width : 780px)
-{
-    #header-wrapper-frontpage
-    {
-        height: 64px;
-        background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min_128.png);
-    }
-}
-*/
 /* All other pages */
-.content-body-red {
-  height: 100%;
-  width: 100%;
-  margin: auto 0px;
-  z-index: 1;
-  position: relative;
-  background-color: #ff5252;
-  color: whitesmoke;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.content-body-amber {
-  height: 100%;
-  width: 100%;
-  margin: auto 0px;
-  z-index: 1;
-  position: relative;
-  background-color: #ffd54f;
-  color: whitesmoke;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.content-body-purple {
-  height: 100%;
-  width: 100%;
-  margin: auto 0px;
-  z-index: 1;
-  position: relative;
-  background-color: #9575cd;
-  color: whitesmoke;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.content-body-green {
-  height: 100%;
-  width: 100%;
-  margin: auto 0px;
-  z-index: 1;
-  position: relative;
-  background-color: #00c853;
-  color: whitesmoke;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-/*
-.header-wrapper
-{
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    position: relative;
-}
-
-.header-wrapper-logo
-{
-    width: 100%;
-    height: 100%;
-    background-image: url(imagesOnSite/DoortjeDeKatHeader_LosseImage_rgb245-min.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-}
-*/
-.content-body-container {
-  width: 70%;
-  min-height: 100%;
-  height: auto;
-  margin: auto;
-}
-
-.other-pages-maintext {
-  height: auto;
-  width: 70%;
-  z-index: 1;
-}
-
-.other-pages-maintext h1 {
-  font-size: 4rem;
-  text-align: left;
-  margin-bottom: 2.5vh;
-  z-index: 1;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: #DCDCDC;
-}
-
-.other-pages-subtext, .other-pages-subtext-floatRight {
-  height: auto;
-  width: 40%;
-  z-index: 1;
-  float: left;
-  text-align: left;
-}
-
-.other-pages-subtext-floatRight {
-  float: right;
-  text-align: right;
-}
-
-.content-body-container h2 {
-  height: auto;
-  width: 100%;
-  line-height: 2em;
-  z-index: 1;
-  font-weight: 300;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  color: #DCDCDC;
-}
-
-.subtext-video {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-
-@media only screen and (max-width: 780px) {
-  .content-body-container {
-    width: 90%;
-  }
-
-  .other-pages-maintext {
-    width: 90%;
-  }
-
-  .other-pages-subtext h2, .other-pages-subtext-floatRight h2 {
-    width: 100%;
-  }
-
-  .header-wrapper-logo {
-    height: 75%;
-  }
-}
-/* Image Gallery */
-.wrap-images {
-  border-top: 2px solid whitesmoke;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  border-bottom: 2px solid whitesmoke;
-  z-index: 1;
-  text-align: center;
-}
-
-.box {
-  display: inline-block;
-  position: relative;
-  width: 512px;
-  height: 512px;
-  overflow: hidden;
-}
-
-.boxInner {
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  top: 10px;
-  bottom: 10px;
-  overflow: hidden;
-}
-
-.boxInner img {
-  width: 100%;
-}
-
-.boxInner .titleBox {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: -70px;
-  background: #000;
-  background: rgba(165, 165, 165, 0.6);
-  color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
-  padding: 20px;
-  text-align: center;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-@media only screen and (max-device-width: 780px) {
-  .boxInner .titleBox {
-    margin-bottom: 0px;
-  }
-}
-body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-  margin-bottom: 0;
-}
 
 /*# sourceMappingURL=style.css.map */
