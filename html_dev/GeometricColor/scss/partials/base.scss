@@ -120,7 +120,7 @@ $color-typography-whitesmoke: #DCDCDC;
 }
 
 //media query for blog post thumbnail
-@mixin respond-to($breakpoint, $width, $height)
+/*@mixin respond-to($breakpoint, $width, $height)
 {
   @if $breakpoint == "xxsmall"
   {
@@ -165,13 +165,13 @@ $color-typography-whitesmoke: #DCDCDC;
     }
   }
 }
-
+*/
 //media query for font-size
 @mixin responsiveFont($breakpoint, $fontSizePerc, $fontSizeRem)
 {
   @if $breakpoint == "xxsmall"
   {
-    @media (min-width: 320px) and (max-width: 480px)
+    @media screen and (max-width: 1080px)
     {
       font-size: $fontSizePerc;
       font-size: $fontSizeRem;

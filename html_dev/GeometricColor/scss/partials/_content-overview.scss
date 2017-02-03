@@ -1,24 +1,24 @@
 /* category main content */
 
-.content-overview-about-me
+.content-overview
 {
-  background-color: $color-background-red;
-  height: 100%;
-  width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-.content-overview-webdev
+.about-me
+{
+    background-color: $color-background-red;
+}
+
+.webdev
 {
   background-color: $color-background-green;
-  height: 100%;
-  width: 100%;
 }
 
-.content-overview-2d3d
+.art-2d3d
 {
   background-color: $color-background-blue;
-  height: 100%;
-  width: 100%;
 }
 
 .content-overview-posts
@@ -29,8 +29,20 @@
   min-height: 100vh;
   margin-top: 5%;
   margin-top: 5vh;
-  @include respond-to(xxsmall, 100%, auto);
-  @include respond-to(xsmall, 100%, auto);
 }
 
 /* breakpoints */
+@media screen and (max-width: 1080px)
+{
+  .content-overview-posts
+  {
+    float: none;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100%;
+  }
+}

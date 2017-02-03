@@ -133,7 +133,7 @@
 
               </a>
 
-              <a href="category/2d3d/">
+              <a href="category/art-2d3d/">
 
                     <article class="column hvr-fade-blue">
 

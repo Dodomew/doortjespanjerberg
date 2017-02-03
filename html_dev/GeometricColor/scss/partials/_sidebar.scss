@@ -11,8 +11,8 @@
   font-size: 200%;
   font-size: 2rem;
   line-height: 2em;
-  @include respond-to(xxsmall, 100%, auto);
-  @include respond-to(xsmall, 100%, auto);
+  //@include respond-to(xxsmall, 100%, auto);
+  //@include respond-to(xsmall, 100%, auto);
   @include responsiveFont(xxsmall, 100%, 1rem);
 }
 
@@ -53,4 +53,22 @@
 .sidebar-content-social-container figure img
 {
   width: 50%;
+}
+
+/* breakpoints */
+@media screen and (max-width: 1080px)
+{
+  .sidebar-container
+  {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
+  }
+
+  .sidebar-content-social-container figure img
+  {
+    width: 25%;
+  }
 }
