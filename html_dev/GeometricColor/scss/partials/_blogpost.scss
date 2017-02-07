@@ -2,28 +2,63 @@
 
 .blog-post
 {
-  width: 90%;
-  height: 256px;
+  width: 95%;
+  height: auto;
   margin: auto;
   margin-bottom: 5%;
   margin-bottom: 5vh;
-  background-color: grey;
-  @include boxshadow(10px, 0px);
   overflow: hidden;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+pre
+{
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+code
+{
+  font-family: Courier, 'New Courier', monospace;
+}
+
+.post-content-container
+{
+  width: 100%;
+  margin: auto;
+}
+
+.post-content-container p
+{
+  width: 100%;
+}
+
+.post-content-container p img
+{
+  max-width: 100%;
+}
+
+.post-content-container ul li, ol li
+{
+  margin-left: 2.5%;
+  margin-left: 2.5vw;
 }
 
 .blog-thumbnail
 {
   width: 100%;
-  height: 100%;
+  height: 256px;
   margin: auto;
   overflow: hidden;
-
 }
 
 .blog-thumbnail img
 {
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
   display: block;
 }
@@ -31,9 +66,8 @@
 /* breakpoints */
 @media screen and (max-width: 1080px)
 {
-  .blog-post
+  .blog-thumbnail
   {
-    width: 100%;
-    height: 256px;
+    height: 128px;
   }
 }
