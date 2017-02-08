@@ -662,6 +662,7 @@ time, mark, audio, video {
 }
 /* blogpost */
 .blog-post {
+  position: relative;
   width: 95%;
   height: auto;
   margin: auto;
@@ -695,6 +696,7 @@ code {
 
 .post-content-container p img {
   max-width: 100%;
+  margin: 1rem;
 }
 
 .post-content-container ul li, ol li {
@@ -713,10 +715,32 @@ code {
   min-width: 100%;
   height: auto;
   display: block;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.image-overlay {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 4rem;
+}
+
+.blog-post:hover .image-overlay {
+  opacity: 1;
+}
+
+.blog-post:hover .blog-thumbnail img {
+  opacity: 0.5;
+  transform: scale(1.05);
 }
 
 /* breakpoints */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
   .blog-thumbnail {
     height: 128px;
   }

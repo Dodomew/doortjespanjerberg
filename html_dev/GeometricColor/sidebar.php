@@ -4,7 +4,13 @@
 
     <p>
 
-      n lobortis cursus libero id maximus. Praesent viverra lobortis laoreet. Nullam porta, risus id aliquam sagittis, tellus mi malesuada tortor, ac efficitur est justo in dui.
+      <?php
+        $category = get_the_category();
+        echo category_description($category[0]->cat_ID);
+      ?>
+
+
+    <p/>
 
   </section>
 
