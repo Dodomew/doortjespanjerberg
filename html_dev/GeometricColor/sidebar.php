@@ -16,25 +16,25 @@
 
   <section class="sidebar-content-social-container">
 
-    <figure>
+    <figure class="image-hover-scale-up">
 
       <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/facebook_logo_white.svg" alt="facebook white logo">
 
     </figure>
 
-    <figure>
+    <figure class="image-hover-scale-up">
 
       <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/github_logo_white.svg" alt="github white logo">
 
     </figure>
 
-    <figure>
+    <figure class="image-hover-scale-up">
 
       <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/instagram_logo_white.svg" alt="instagram white logo">
 
     </figure>
 
-    <figure>
+    <figure class="image-hover-scale-up">
 
       <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/mail_logo_white.svg" alt="mail white logo">
 

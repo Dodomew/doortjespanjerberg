@@ -55,6 +55,16 @@
   width: 50%;
 }
 
+.image-hover-scale-up
+{
+  transition: transform 0.3s;
+}
+
+.image-hover-scale-up:hover
+{
+  transform: scale(1.1);
+}
+
 /* breakpoints */
 @media screen and (max-width: 1080px)
 {

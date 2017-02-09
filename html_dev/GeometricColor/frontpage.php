@@ -55,12 +55,27 @@
 
                                   ?>
 
-                                  <?php if(has_post_thumbnail()): ?>
-                                      <figure class="blog-thumbnail">
-                                          <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
-                                              <?php the_post_thumbnail() ?>
-                                          </a>
-                                      </figure>
+                                  <section class="column-thumbnail-container">
+
+                                    <?php if(has_post_thumbnail()): ?>
+
+                                      <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
+
+                                         <figure class="column-thumbnail">
+
+                                           <?php the_post_thumbnail() ?>
+
+                                           <figure class="image-overlay">
+
+                                             <?php the_title(); ?>
+
+                                           </figure>
+
+                                         </figure>
+
+                                       </a>
+
+                                   </section>
 
                                   <?php
                                       endif;
@@ -113,12 +128,27 @@
 
                               ?>
 
-                              <?php if(has_post_thumbnail()): ?>
-                                  <figure class="blog-thumbnail">
-                                      <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
-                                          <?php the_post_thumbnail() ?>
-                                      </a>
-                                  </figure>
+                              <section class="column-thumbnail-container">
+
+                                <?php if(has_post_thumbnail()): ?>
+
+                                  <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
+
+                                     <figure class="column-thumbnail">
+
+                                       <?php the_post_thumbnail() ?>
+
+                                       <figure class="image-overlay">
+
+                                         <?php the_title(); ?>
+
+                                       </figure>
+
+                                     </figure>
+
+                                   </a>
+
+                               </section>
 
                               <?php
                                   endif;
@@ -171,13 +201,27 @@
 
                                     ?>
 
-                                    <?php if(has_post_thumbnail()): ?>
-                                        <figure class="blog-thumbnail">
-                                            <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
-                                                <?php the_post_thumbnail() ?>
-                                            </a>
-                                        </figure>
+                                    <section class="column-thumbnail-container">
 
+                                      <?php if(has_post_thumbnail()): ?>
+
+                                        <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
+
+                                           <figure class="column-thumbnail">
+
+                                             <?php the_post_thumbnail() ?>
+
+                                             <figure class="image-overlay">
+
+                                               <?php the_title(); ?>
+
+                                             </figure>
+
+                                           </figure>
+
+                                         </a>
+
+                                     </section>
                                     <?php
                                         endif;
                                         endwhile;
