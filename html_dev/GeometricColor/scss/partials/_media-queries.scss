@@ -1,30 +1,14 @@
-/* ----------- desktops ----------- */
-@media screen
-  and (min-device-width: 1080px)
-  and (-webkit-max-device-pixel-ratio: 1)
-  {
+/* ----- Mobile & Tablets ----- */
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
+{
 
-  }
-
-/* ----------- desktops RETINA ----------- */
-@media screen
-  and (min-device-width: 1080px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi)
-  {
-
-  }
-
-/* ----------- Mobile ----------- */
-  @media only screen
-      and (min-device-width: 320px)
-      and (-webkit-min-device-pixel-ratio: 1)
-      and (min-resolution: 144dpi)
-      {
-
-      }
+}
 
 /* https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports */
 /* http://dpi.lv/#21″ */
 /* https://developers.google.com/web/fundamentals/design-and-ui/responsive/ */
-/* De meeste desktops beginnen vanaf 1080 of 1200 width. Mobile gaat van 320 - 640. Tablets gaan tot 1080/1200. Verschil tussen deze apparaten zijn PPI en Pixel per ratio */
+/*
+De meeste desktops beginnen vanaf 1080 of 1200 width. Mobile gaat van 320 - 640. Tablets gaan tot 1080/1200. Verschil tussen deze apparaten zijn PPI en Pixel per ratio.
+Mobile devices' physical width eindigt rond de 1440. Desktop monitors of laptops hebben meer dan dat. Ik kan dus vaststellen dat met max-device-width: 1440 ik veel apparaten pak.
+Plus de device pixel ratio op minimum 1 wordt er nog beter gefilterd op mobiel/tablet.
+*/

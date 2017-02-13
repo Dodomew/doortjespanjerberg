@@ -369,6 +369,7 @@ time, mark, audio, video {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   display: block;
+  -webkit-transform: translateY(70%);
   transform: translateY(70%);
 }
 
@@ -391,6 +392,7 @@ time, mark, audio, video {
   height: auto;
   display: block;
   opacity: 1;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -400,6 +402,7 @@ time, mark, audio, video {
 
 .column-thumbnail-container:hover .column-thumbnail img {
   opacity: 0.5;
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -437,7 +440,17 @@ time, mark, audio, video {
   position: relative;
   width: 100%;
   height: 25%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .title-page h3 {
@@ -528,7 +541,7 @@ time, mark, audio, video {
   justify-content: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   .column {
     width: 100%;
     height: 33.33%;
@@ -566,6 +579,55 @@ time, mark, audio, video {
     border-bottom: 0px solid white;
   }
 }
+/*
+@media screen and (max-width: 1080px)
+{
+  .column
+  {
+    width: 100%;
+    height: 33.33%;
+    padding: 0 0 0 0;
+  }
+
+  .column-images.column-float
+  {
+    display: none;
+  }
+
+  .title-page
+  {
+    height: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .icon-container
+  {
+    width: 50%;
+    height: 100%;
+  }
+
+  .frontpage-category-title
+  {
+    width: 50%;
+  }
+
+  .content-container-frontpage
+  {
+    flex-direction: column;
+  }
+
+  .title-page-rectangle
+  {
+    width: 20%;
+    height: 100%;
+  }
+
+  #about-me-icon
+  {
+    border-bottom: 0px solid white;
+  }
+}
+*/
 /* header */
 .content-header {
   width: 100%;
@@ -578,22 +640,42 @@ time, mark, audio, video {
   height: 100%;
   margin: auto;
   border-bottom: 1px solid #DCDCDC;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .content-header-left {
   width: 75%;
   height: 100%;
-  float: left;
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .content-header-left h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   font-weight: 400;
   font-size: 800%;
   font-size: 8rem;
+  /*
+  @media screen and (max-width: 1080px)
+  {
+    font-size: $fontSizePerc;
+    font-size: $fontSizeRem;
+  }
+  */
 }
-@media screen and (max-width: 1080px) {
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   .content-header-left h1 {
     font-size: 400%;
     font-size: 4rem;
@@ -603,30 +685,43 @@ time, mark, audio, video {
 .content-header-right {
   width: 25%;
   height: 100%;
-  float: right;
-  display: flex;
-  align-items: center;
 }
 
 .content-header-right figure {
-  width: 90%;
-  margin: auto;
+  height: 100%;
 }
 
 .content-header-right figure img {
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .sidebar-and-posts-container {
   width: 90%;
   min-height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 /* breakpoints */
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
+  .sidebar-and-posts-container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
 /*sidebar */
 .sidebar-container {
-  float: right;
   width: 20%;
   height: auto;
   margin-top: 5%;
@@ -635,8 +730,15 @@ time, mark, audio, video {
   font-size: 200%;
   font-size: 2rem;
   line-height: 2em;
+  /*
+  @media screen and (max-width: 1080px)
+  {
+    font-size: $fontSizePerc;
+    font-size: $fontSizeRem;
+  }
+  */
 }
-@media screen and (max-width: 1080px) {
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   .sidebar-container {
     font-size: 100%;
     font-size: 1rem;
@@ -663,9 +765,17 @@ time, mark, audio, video {
   width: 100%;
   height: auto;
   margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .sidebar-content-social-container figure {
@@ -678,17 +788,18 @@ time, mark, audio, video {
 }
 
 .image-hover-scale-up {
+  -webkit-transition: transform 0.3s;
   transition: transform 0.3s;
 }
 
 .image-hover-scale-up:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 /* breakpoints */
-@media screen and (max-width: 1080px) {
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   .sidebar-container {
-    float: none;
     width: 100%;
     height: auto;
     margin-bottom: 2.5%;
@@ -699,6 +810,24 @@ time, mark, audio, video {
     width: 25%;
   }
 }
+/*
+@media screen and (max-width: 1080px)
+{
+  .sidebar-container
+  {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
+  }
+
+  .sidebar-content-social-container figure img
+  {
+    width: 25%;
+  }
+}
+*/
 /* blogpost */
 .blog-post {
   position: relative;
@@ -735,7 +864,8 @@ code {
 
 .post-content-container p img {
   max-width: 100%;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .post-content-container ul li, ol li {
@@ -755,18 +885,23 @@ code {
   height: auto;
   display: block;
   opacity: 1;
+  -webkit-transtion: all 0.3s;
   transition: all 0.3s;
 }
 
 .image-overlay {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
   opacity: 0;
+  -webkit-transtion: opacity 0.3s;
   transition: opacity 0.3s;
   font-size: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 256px;
 }
 
 .blog-post:hover .image-overlay {
@@ -775,15 +910,29 @@ code {
 
 .blog-post:hover .blog-thumbnail img {
   opacity: 0.5;
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 /* breakpoints */
-@media screen and (max-width: 1024px) {
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   .blog-thumbnail {
     height: 128px;
   }
+
+  .image-overlay {
+    line-height: 128px;
+  }
 }
+/*
+@media screen and (max-width: 1024px)
+{
+  .blog-thumbnail
+  {
+    height: 128px;
+  }
+}
+*/
 /* category main content */
 .content-overview {
   width: 100%;
@@ -803,7 +952,6 @@ code {
 }
 
 .content-overview-posts {
-  float: left;
   width: 75%;
   min-height: 100%;
   min-height: 100vh;
@@ -812,16 +960,10 @@ code {
 }
 
 /* breakpoints */
-@media screen and (max-width: 1080px) {
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   .content-overview-posts {
-    float: none;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
   }
 }
 /*@mixin respond-to($breakpoint, $width, $height)
@@ -1046,9 +1188,17 @@ a {
   overflow: hidden;
   background-color: #141414;
   color: darkgrey;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .page-divider {

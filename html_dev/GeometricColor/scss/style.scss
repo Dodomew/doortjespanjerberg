@@ -52,9 +52,7 @@ a
     overflow: hidden;
     background-color: $color-background-frontpage;
     color: darkgrey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include displayFlex(center, center, row)
 }
 
 .page-divider

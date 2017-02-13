@@ -41,7 +41,8 @@ code
 .post-content-container p img
 {
   max-width: 100%;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .post-content-container ul li, ol li
@@ -64,6 +65,7 @@ code
   height: auto;
   display: block;
   opacity: 1;
+  -webkit-transtion: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -71,13 +73,20 @@ code
 {
   display: block;
   position: absolute;
-  top: 50%; //centers vertically
-  left: 50%;
-  transform: translateX(-50%); //centers horizontally
+  //top: 50%; //centers vertically
+  //left: 50%;
+  //transform: translateX(-50%); //centers horizontally
   opacity: 0;
+  -webkit-transtion: opacity 0.3s;
   transition: opacity 0.3s;
   //https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/
   font-size: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 256px;
 }
 
 .blog-post:hover .image-overlay
@@ -88,10 +97,24 @@ code
 .blog-post:hover .blog-thumbnail img
 {
   opacity: 0.5;
+  -webkit-transform: scale(1.05);
   transform:scale(1.05);
 }
 
 /* breakpoints */
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
+{
+  .blog-thumbnail
+  {
+    height: 128px;
+  }
+
+  .image-overlay
+  {
+    line-height: 128px;
+  }
+}
+/*
 @media screen and (max-width: 1024px)
 {
   .blog-thumbnail
@@ -99,3 +122,4 @@ code
     height: 128px;
   }
 }
+*/

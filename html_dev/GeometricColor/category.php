@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
 	<main class="content-overview-posts">
 
 			<?php
@@ -14,6 +12,8 @@
 			?>
 
 	</main>
+
+	<?php get_sidebar(); ?>
 
 </main>
 

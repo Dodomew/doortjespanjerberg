@@ -119,6 +119,21 @@ $color-typography-whitesmoke: #DCDCDC;
   text-size-adjust: $adjust;
 }
 
+@mixin displayFlex($justify, $alignItems, $direction)
+{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: $justify;
+  justify-content: $justify;
+  -webkit-align-items: $alignItems;
+  align-items: $alignItems;
+  -webkit-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
 //media query for blog post thumbnail
 /*@mixin respond-to($breakpoint, $width, $height)
 {
@@ -171,10 +186,17 @@ $color-typography-whitesmoke: #DCDCDC;
 {
   @if $breakpoint == "xxsmall"
   {
+    @media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
+    {
+      font-size: $fontSizePerc;
+      font-size: $fontSizeRem;
+    }
+    /*
     @media screen and (max-width: 1080px)
     {
       font-size: $fontSizePerc;
       font-size: $fontSizeRem;
     }
+    */
   }
 }

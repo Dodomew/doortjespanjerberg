@@ -8,7 +8,7 @@
 
 .about-me
 {
-    background-color: $color-background-red;
+  background-color: $color-background-red;
 }
 
 .webdev
@@ -23,7 +23,6 @@
 
 .content-overview-posts
 {
-  float: left;
   width: 75%;
   min-height: 100%;
   min-height: 100vh;
@@ -32,17 +31,11 @@
 }
 
 /* breakpoints */
-@media screen and (max-width: 1080px)
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
 {
   .content-overview-posts
   {
-    float: none;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-height: 100%;
+    width: 100%;
+    @include borderBottom(1px);
   }
 }
