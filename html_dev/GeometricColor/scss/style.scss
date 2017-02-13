@@ -61,4 +61,12 @@ a
     width: 100%;
 }
 
-/* All other pages */
+/* Breakpoints */
+@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
+{
+  .content-container-frontpage
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
