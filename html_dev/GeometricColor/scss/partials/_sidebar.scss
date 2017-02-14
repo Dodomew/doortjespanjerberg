@@ -65,21 +65,46 @@
 }
 
 /* breakpoints */
-@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
-{
-  .sidebar-container
+/* ----- Mobile phones and tablets ----- */
+@media screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
   {
-    width: 100%;
-    height: auto;
-    margin-bottom: 2.5%;
-    margin-bottom: 2.5vh;
+    .sidebar-container
+    {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2.5%;
+      margin-bottom: 2.5vh;
+    }
+
+    .sidebar-content-social-container figure img
+    {
+      width: 25%;
+    }
   }
 
-  .sidebar-content-social-container figure img
+/* ----- Tablets and their landscape mode ----- */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
   {
-    width: 25%;
+    .sidebar-container
+    {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2.5%;
+      margin-bottom: 2.5vh;
+    }
+
+    .sidebar-content-social-container figure img
+    {
+      width: 25%;
+    }
   }
-}
+
 
 /*
 @media screen and (max-width: 1080px)

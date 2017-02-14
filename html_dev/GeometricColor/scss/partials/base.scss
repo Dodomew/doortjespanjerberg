@@ -186,7 +186,7 @@ $color-typography-whitesmoke: #DCDCDC;
 {
   @if $breakpoint == "xxsmall"
   {
-    @media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
+    @media (max-width: 1080px)
     {
       font-size: $fontSizePerc;
       font-size: $fontSizeRem;

@@ -4,6 +4,42 @@
 
 }
 
+@media only screen and (max-width: 1024px)
+{
+
+}
+
+@media only screen and (max-width: 1440px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)
+{
+
+}
+
+@media screen
+  and (min-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  {
+
+  }
+  
+/* ----- Mobile phones and tablets ----- */
+@media screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  {
+
+  }
+
+/* ----- Tablets and their landscape mode ----- */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+
+  }
+
+
 /* https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports */
 /* http://dpi.lv/#21″ */
 /* https://developers.google.com/web/fundamentals/design-and-ui/responsive/ */
@@ -11,4 +47,14 @@
 De meeste desktops beginnen vanaf 1080 of 1200 width. Mobile gaat van 320 - 640. Tablets gaan tot 1080/1200. Verschil tussen deze apparaten zijn PPI en Pixel per ratio.
 Mobile devices' physical width eindigt rond de 1440. Desktop monitors of laptops hebben meer dan dat. Ik kan dus vaststellen dat met max-device-width: 1440 ik veel apparaten pak.
 Plus de device pixel ratio op minimum 1 wordt er nog beter gefilterd op mobiel/tablet.
+
+@media screen
+  and (min-width: 600px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  {
+
+  }
+
+  1366 = ipad pro height, landscape = height --> width, dus maxwidth 1366
 */

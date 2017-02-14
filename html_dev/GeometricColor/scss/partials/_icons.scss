@@ -14,32 +14,30 @@
     border-bottom: 2px solid $color-typography-darkgrey;
 }
 
-@media (max-device-width: 720px)
+@media (max-width: 1024px)
 {
     #about-me-icon
     {
-        @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-192px), 64px); 
+        @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-192px), 64px);
     }
-    
+
         #two-dee-icon
     {
-        @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-256px), 64px); 
+        @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-256px), 64px);
     }
-    
+
         #three-dee-icon
     {
-        @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-320x), 64px); 
+        @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-320x), 64px);
     }
-    
+
         #webdesign-icon
     {
         @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165_64.png", 0px, (-384px), 64px);
     }
-    
+
     .icon-container
     {
         display: none;
     }
 }
-
-

@@ -102,18 +102,40 @@ code
 }
 
 /* breakpoints */
-@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
-{
-  .blog-thumbnail
+/* ----- Mobile phones and tablets ----- */
+@media screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
   {
-    height: 128px;
+    .blog-thumbnail
+    {
+      height: 128px;
+    }
+
+    .image-overlay
+    {
+      line-height: 128px;
+    }
   }
 
-  .image-overlay
+/* ----- Tablets and their landscape mode ----- */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
   {
-    line-height: 128px;
+    .blog-thumbnail
+    {
+      height: 128px;
+    }
+
+    .image-overlay
+    {
+      line-height: 128px;
+    }
   }
-}
+
 /*
 @media screen and (max-width: 1024px)
 {

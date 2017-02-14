@@ -136,8 +136,8 @@
     text-align: center;
     font-family: $font-normal;
     font-weight: 300;
-    font-size: 150%;
-    font-size: 1.5rem;
+    font-size: 200%;
+    font-size: 2rem;
     letter-spacing: 0.15em;
     padding: 1vh;
 }
@@ -204,7 +204,7 @@
 
 //media query
 
-@media (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1)
+@media only screen and (max-width: 1024px)
 {
   .column
   {
@@ -251,6 +251,111 @@
     border-bottom: 0px solid white;
   }
 }
+
+/* ----- Mobile phones and tablets ----- */
+@media screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  {
+    .column
+    {
+      width: 100%;
+      height: 33.33%;
+      padding: 0 0 0 0;
+    }
+
+    .column-images.column-float
+    {
+      display: none;
+    }
+
+    .title-page
+    {
+      height: 100%;
+      margin: 0 0 0 0;
+    }
+
+    .icon-container
+    {
+      width: 50%;
+      height: 100%;
+    }
+
+    .frontpage-category-title
+    {
+      width: 50%;
+    }
+
+    .content-container-frontpage
+    {
+      flex-direction: column;
+    }
+
+    .title-page-rectangle
+    {
+      width: 20%;
+      height: 100%;
+    }
+
+    #about-me-icon
+    {
+      border-bottom: 0px solid white;
+    }
+  }
+
+/* ----- Tablets and their landscape mode ----- */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+    .column
+    {
+      width: 100%;
+      height: 33.33%;
+      padding: 0 0 0 0;
+    }
+
+    .column-images.column-float
+    {
+      display: none;
+    }
+
+    .title-page
+    {
+      height: 100%;
+      margin: 0 0 0 0;
+    }
+
+    .icon-container
+    {
+      width: 50%;
+      height: 100%;
+    }
+
+    .frontpage-category-title
+    {
+      width: 50%;
+    }
+
+    .content-container-frontpage
+    {
+      flex-direction: column;
+    }
+
+    .title-page-rectangle
+    {
+      width: 20%;
+      height: 100%;
+    }
+
+    #about-me-icon
+    {
+      border-bottom: 0px solid white;
+    }
+  }
+
 /*
 @media screen and (max-width: 1080px)
 {
