@@ -2,15 +2,31 @@
 
   <section class=sidebar-content-container>
 
-    <p>
+    <?php
 
-      <?php
-        $category = get_the_category();
-        echo category_description($category[0]->cat_ID);
-      ?>
+      $the_cat = get_the_category();
 
+      $category_name = $the_cat[0]->cat_name;
 
-    <p/>
+      $category_link = get_category_link( $the_cat[0]->cat_ID );
+
+      //https://wisdmlabs.com/blog/create-link-current-category-wordpress/
+
+    ?>
+
+    <a href="<?php echo esc_url( $category_link ); ?>"
+      <p>
+
+        <?php
+
+          $category = get_the_category();
+
+          echo category_description($category[0]->cat_ID);
+
+        ?>
+
+      </p>
+    </a>
 
   </section>
 

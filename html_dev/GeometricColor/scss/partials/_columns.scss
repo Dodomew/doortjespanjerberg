@@ -150,7 +150,7 @@
 
 .rectangle-red
 {
-    background-color: $color-background-red;
+  background-color: $color-background-red;
 }
 
 .rectangle-green
@@ -166,6 +166,11 @@
 {
   z-index: 10;
   margin: 0 auto;
+}
+
+.mobile-thumbnail-container
+{
+  display: none;
 }
 
 #about-me-icon
@@ -250,6 +255,11 @@
   {
     border-bottom: 0px solid white;
   }
+
+  .mobile-thumbnail-container
+  {
+    display: block;
+  }
 }
 
 /* ----- Mobile phones and tablets ----- */
@@ -302,6 +312,17 @@
     {
       border-bottom: 0px solid white;
     }
+
+    .mobile-thumbnail-container
+    {
+      display: block;
+    }
+
+    .column-thumbnail-container:hover .column-thumbnail img
+    {
+      -webkit-transform: scale(1);
+      transform:scale(1);
+    }
   }
 
 /* ----- Tablets and their landscape mode ----- */
@@ -353,6 +374,12 @@
     #about-me-icon
     {
       border-bottom: 0px solid white;
+    }
+
+    .column-thumbnail-container:hover .column-thumbnail img
+    {
+      -webkit-transform: scale(1);
+      transform:scale(1);
     }
   }
 

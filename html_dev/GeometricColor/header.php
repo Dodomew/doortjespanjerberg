@@ -40,11 +40,15 @@
 
           <section class="content-header-right">
 
-            <figure> <!-- Circle, triangle and square logo icon -->
+            <a href="<?php echo get_home_url(); ?>">
 
-              <img src="<?php bloginfo('template_directory');?>/images/icons/spanjerberg_portfolio_icon_logo_circleSquareTriangle.svg" alt="Circle, triangle and square logo">
+              <figure> <!-- Circle, triangle and square logo icon -->
 
-            </figure>
+                <img src="<?php bloginfo('template_directory');?>/images/icons/spanjerberg_portfolio_icon_logo_circleSquareTriangle.svg" alt="Circle, triangle and square logo">
+
+              </figure>
+
+            </a>
 
           </section>
 

@@ -485,6 +485,10 @@ time, mark, audio, video {
   margin: 0 auto;
 }
 
+.mobile-thumbnail-container {
+  display: none;
+}
+
 #about-me-icon {
   background-image: url("imagesOnSite/Site_Icons_Spritesheet_165.png");
   background-position: 0px -384px;
@@ -578,6 +582,10 @@ time, mark, audio, video {
   #about-me-icon {
     border-bottom: 0px solid white;
   }
+
+  .mobile-thumbnail-container {
+    display: block;
+  }
 }
 /* ----- Mobile phones and tablets ----- */
 @media screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -617,6 +625,15 @@ time, mark, audio, video {
   #about-me-icon {
     border-bottom: 0px solid white;
   }
+
+  .mobile-thumbnail-container {
+    display: block;
+  }
+
+  .column-thumbnail-container:hover .column-thumbnail img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 /* ----- Tablets and their landscape mode ----- */
 @media only screen and (min-width: 768px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -655,6 +672,11 @@ time, mark, audio, video {
 
   #about-me-icon {
     border-bottom: 0px solid white;
+  }
+
+  .column-thumbnail-container:hover .column-thumbnail img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 /*

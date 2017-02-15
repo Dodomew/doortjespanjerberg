@@ -27,7 +27,36 @@
 
                           <figure class="icon-container">
 
-                            <figure class="category-icon"></figure>
+                            <figure class="mobile-thumbnail-container">
+
+                              <?php
+
+                                  $catquery = new WP_Query( 'cat=2&posts_per_page=1' );
+
+                                  while($catquery->have_posts()) : $catquery->the_post();
+
+                              ?>
+
+                              <section class="column-thumbnail-container">
+
+                                <?php if(has_post_thumbnail()): ?>
+
+                                    <figure class="column-thumbnail">
+
+                                      <?php the_post_thumbnail() ?>
+
+                                    </figure>
+
+                                  <?php endif; ?>
+
+                               </section>
+
+                              <?php
+
+                                  endwhile;
+                              ?>
+
+                            </figure>
 
                           </figure>
 
@@ -37,7 +66,7 @@
 
                           </header>
 
-                        </header>
+                      </header>
 
                       <div class="column-images column-float">
 
@@ -100,7 +129,40 @@
 
                         <figure class="icon-container">
 
-                          <figure class="category-icon"></figure>
+                          <figure class="category-icon">
+
+                          </figure>
+
+                          <figure class="mobile-thumbnail-container">
+
+                            <?php
+
+                                $catquery = new WP_Query( 'cat=5&posts_per_page=1' );
+
+                                while($catquery->have_posts()) : $catquery->the_post();
+
+                            ?>
+
+                            <section class="column-thumbnail-container">
+
+                              <?php if(has_post_thumbnail()): ?>
+
+                                  <figure class="column-thumbnail">
+
+                                    <?php the_post_thumbnail() ?>
+
+                                  </figure>
+
+                                <?php endif; ?>
+
+                             </section>
+
+                            <?php
+
+                                endwhile;
+                            ?>
+
+                          </figure>
 
                         </figure>
 
@@ -173,7 +235,41 @@
 
                               <figure class="icon-container">
 
-                                <figure class="category-icon"></figure>
+                                <figure class="category-icon">
+
+
+                                </figure>
+
+                                <figure class="mobile-thumbnail-container">
+
+                                  <?php
+
+                                      $catquery = new WP_Query( 'cat=6&posts_per_page=1' );
+
+                                      while($catquery->have_posts()) : $catquery->the_post();
+
+                                  ?>
+
+                                  <section class="column-thumbnail-container">
+
+                                    <?php if(has_post_thumbnail()): ?>
+
+                                        <figure class="column-thumbnail">
+
+                                          <?php the_post_thumbnail() ?>
+
+                                        </figure>
+
+                                      <?php endif; ?>
+
+                                   </section>
+
+                                  <?php
+
+                                      endwhile;
+                                  ?>
+
+                                </figure>
 
                               </figure>
 
