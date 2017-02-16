@@ -31,3 +31,46 @@
   background-color: $color-background-blue-onHover;
   color: $color-typography-white;
 }
+
+@media screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  {
+    .hvr-fade-red
+    {
+      background-color: $color-background-red;
+    }
+
+    .hvr-fade-green
+    {
+      background-color: $color-background-green;
+    }
+
+    .hvr-fade-blue
+    {
+      background-color: $color-background-blue;
+    }
+  }
+
+/* ----- Tablets and their landscape mode ----- */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+    .hvr-fade-red
+    {
+      background-color: $color-background-red;
+    }
+
+    .hvr-fade-green
+    {
+      background-color: $color-background-green;
+    }
+
+    .hvr-fade-blue
+    {
+      background-color: $color-background-blue;
+    }
+  }

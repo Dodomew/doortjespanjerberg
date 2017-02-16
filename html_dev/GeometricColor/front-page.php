@@ -41,11 +41,15 @@
 
                                 <?php if(has_post_thumbnail()): ?>
 
-                                    <figure class="column-thumbnail">
+                                  <div class="column-thumbnail">
+
+                                    <picture>
 
                                       <?php the_post_thumbnail() ?>
 
-                                    </figure>
+                                    </picture>
+
+                                  </div>
 
                                   <?php endif; ?>
 
@@ -74,8 +78,6 @@
 
                                 <div id="rectangle-red"></div>
 
-                              <!--<a href="aboutMe.html"><div id="rectangle-red"></div></a>-->
-
                                   <?php
 
                                       $catquery = new WP_Query( 'cat=2&posts_per_page=2' );
@@ -90,7 +92,7 @@
 
                                       <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
 
-                                         <figure class="column-thumbnail">
+                                         <picture class="column-thumbnail">
 
                                            <?php the_post_thumbnail() ?>
 
@@ -100,7 +102,7 @@
 
                                            </figure>
 
-                                         </figure>
+                                         </picture>
 
                                        </a>
 
@@ -147,11 +149,15 @@
 
                               <?php if(has_post_thumbnail()): ?>
 
-                                  <figure class="column-thumbnail">
+                                <div class="column-thumbnail">
+
+                                  <picture>
 
                                     <?php the_post_thumbnail() ?>
 
-                                  </figure>
+                                  </picture>
+
+                                </div>
 
                                 <?php endif; ?>
 
@@ -196,7 +202,7 @@
 
                                   <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
 
-                                     <figure class="column-thumbnail">
+                                     <picture class="column-thumbnail">
 
                                        <?php the_post_thumbnail() ?>
 
@@ -206,7 +212,7 @@
 
                                        </figure>
 
-                                     </figure>
+                                     </picture>
 
                                    </a>
 
@@ -254,11 +260,15 @@
 
                                     <?php if(has_post_thumbnail()): ?>
 
-                                        <figure class="column-thumbnail">
+                                      <div class="column-thumbnail">
+
+                                        <picture>
 
                                           <?php the_post_thumbnail() ?>
 
-                                        </figure>
+                                        </picture>
+
+                                      </div>
 
                                       <?php endif; ?>
 
@@ -303,7 +313,7 @@
 
                                         <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
 
-                                           <figure class="column-thumbnail">
+                                           <picture class="column-thumbnail">
 
                                              <?php the_post_thumbnail() ?>
 
@@ -313,11 +323,12 @@
 
                                              </figure>
 
-                                           </figure>
+                                           </picture>
 
                                          </a>
 
                                      </section>
+
                                     <?php
                                         endif;
                                         endwhile;

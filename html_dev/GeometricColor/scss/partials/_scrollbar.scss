@@ -7,3 +7,26 @@ body::-webkit-scrollbar-thumb
 {
   background-color: rgba(50,50,50,0.5);
 }
+
+@media screen
+  and (min-width: 320px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  {
+    body::-webkit-scrollbar
+    {
+      width: 1em;
+    }
+  }
+
+/* ----- Tablets and their landscape mode ----- */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+    body::-webkit-scrollbar
+    {
+      width: 1em;
+    }
+  }
