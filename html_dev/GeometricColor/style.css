@@ -575,287 +575,6 @@ time, mark, audio, video, picture {
 }
 
 /* ----- Mobile phones and tablets ----- */
-/*
-@media screen
-  and (min-width: 320px)
-  and (max-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  {
-    .column
-    {
-      width: 100%;
-      height: 33.33%;
-      padding: 0 0 0 0;
-    }
-
-    .column-images.column-float
-    {
-      display: none;
-    }
-
-    .title-page
-    {
-      height: 100%;
-      margin: 0 0 0 0;
-    }
-
-    .icon-container
-    {
-      width: 50%;
-      height: 100%;
-    }
-
-    .frontpage-category-title
-    {
-      width: 50%;
-    }
-
-    .content-container-frontpage
-    {
-      flex-direction: column;
-    }
-
-    .title-page-rectangle
-    {
-      display: none;
-    }
-
-    #about-me-icon
-    {
-      border-bottom: 0px solid white;
-    }
-
-    .mobile-thumbnail-container
-    {
-      display: block;
-    }
-
-    .column-thumbnail-container:hover .column-thumbnail img
-    {
-      -webkit-transform: scale(1);
-      transform:scale(1);
-    }
-
-    .column-thumbnail-container
-    {
-      height: 100%;
-    }
-
-    .column-thumbnail img
-    {
-      width: auto;
-      height: 256px;
-    }
-  }
-*/
-/* ----- Tablets and their landscape mode ----- */
-/*
-@media only screen
-  and (min-height: 768px)
-  and (max-height: 1024px)
-  and (min-width: 768px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  {
-    .column
-    {
-      width: 100%;
-      height: 33.33%;
-      padding: 0 0 0 0;
-    }
-
-    .column-images.column-float
-    {
-      display: none;
-    }
-
-    .title-page
-    {
-      height: 100%;
-      margin: 0 0 0 0;
-    }
-
-    .icon-container
-    {
-      width: 50%;
-      height: 100%;
-    }
-
-    .frontpage-category-title
-    {
-      width: 50%;
-    }
-
-    .content-container-frontpage
-    {
-      flex-direction: column;
-    }
-
-    .title-page-rectangle
-    {
-      display: none;
-    }
-
-    #about-me-icon
-    {
-      border-bottom: 0px solid white;
-    }
-
-    .mobile-thumbnail-container
-    {
-      display: block;
-    }
-
-    .column-thumbnail-container:hover .column-thumbnail img
-    {
-      -webkit-transform: scale(1);
-      transform:scale(1);
-    }
-
-    .column-thumbnail-container
-    {
-      height: 100%;
-    }
-
-    .column-thumbnail img
-    {
-      width: auto;
-      height: 512px;
-    }
-  }
-*/
-/* ----- Big tablets and their landscape mode ----- */
-/*
-@media only screen
-  and (min-height: 1025px)
-  and (max-height: 1366px)
-  and (min-width: 1024px)
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  {
-    .column
-    {
-      width: 100%;
-      height: 33.33%;
-      padding: 0 0 0 0;
-    }
-
-    .column-images.column-float
-    {
-      display: none;
-    }
-
-    .title-page
-    {
-      height: 100%;
-      margin: 0 0 0 0;
-    }
-
-    .icon-container
-    {
-      width: 50%;
-      height: 100%;
-    }
-
-    .frontpage-category-title
-    {
-      width: 50%;
-    }
-
-    .content-container-frontpage
-    {
-      flex-direction: column;
-    }
-
-    .title-page-rectangle
-    {
-      display: none;
-    }
-
-    #about-me-icon
-    {
-      border-bottom: 0px solid white;
-    }
-
-    .mobile-thumbnail-container
-    {
-      display: block;
-    }
-
-    .column-thumbnail-container:hover .column-thumbnail img
-    {
-      -webkit-transform: scale(1);
-      transform:scale(1);
-    }
-
-    .column-thumbnail-container
-    {
-      height: 100%;
-    }
-
-    .column-thumbnail img
-    {
-      width: auto;
-      height: 768px;
-    }
-  }
-*/
-/* ----- Fallback for mobile  ----- */
-/*
-@media only screen and (max-width: 1024px)
-{
-  .column
-  {
-    width: 100%;
-    height: 33.33%;
-    padding: 0 0 0 0;
-  }
-
-  .column-images.column-float
-  {
-    display: none;
-  }
-
-  .title-page
-  {
-    height: 100%;
-    margin: 0 0 0 0;
-  }
-
-  .icon-container
-  {
-    width: 50%;
-    height: 100%;
-  }
-
-  .frontpage-category-title
-  {
-    width: 50%;
-  }
-
-  .content-container-frontpage
-  {
-    flex-direction: column;
-  }
-
-  .title-page-rectangle
-  {
-    width: 20%;
-    height: 100%;
-  }
-
-  #about-me-icon
-  {
-    border-bottom: 0px solid white;
-  }
-
-  .mobile-thumbnail-container
-  {
-    display: block;
-  }
-}
-*/
-/* ----- Mobile phones and tablets ----- */
 @media screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .column {
     width: 100%;
@@ -910,6 +629,10 @@ time, mark, audio, video, picture {
     width: auto;
     height: 768px;
   }
+
+  .column:active > .image-overlay {
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .column-thumbnail img {
@@ -917,13 +640,20 @@ time, mark, audio, video, picture {
     height: 256px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   .column-thumbnail img {
     width: auto;
     height: 512px;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+/* Nexus 7 */
+@media only screen and (min-width: 600px) and (max-width: 960px) and (min-height: 600px) and (max-height: 960px) and (-webkit-min-device-pixel-ratio: 1) {
+  .column-thumbnail img {
+    width: auto;
+    height: 512px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
   .column-thumbnail img {
     width: auto;
     height: 768px;
@@ -979,66 +709,11 @@ time, mark, audio, video, picture {
   .column-thumbnail-container {
     height: 100%;
   }
-}
-/* ----- Tablets and their landscape mode ----- */
-/*
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  {
-    .column
-    {
-      width: 100%;
-      height: 33.33%;
-      padding: 0 0 0 0;
-    }
 
-    .column-images.column-float
-    {
-      display: none;
-    }
-
-    .title-page
-    {
-      height: 100%;
-      margin: 0 0 0 0;
-    }
-
-    .icon-container
-    {
-      width: 50%;
-      height: 100%;
-    }
-
-    .frontpage-category-title
-    {
-      width: 50%;
-    }
-
-    .content-container-frontpage
-    {
-      flex-direction: column;
-    }
-
-    .title-page-rectangle
-    {
-      width: 20%;
-      height: 100%;
-    }
-
-    #about-me-icon
-    {
-      border-bottom: 0px solid white;
-    }
-
-    .column-thumbnail-container:hover .column-thumbnail img
-    {
-      -webkit-transform: scale(1);
-      transform:scale(1);
-    }
+  .column:active > .image-overlay {
+    opacity: 1;
   }
-  */
+}
 /* header */
 .content-header {
   width: 100%;
