@@ -27,7 +27,7 @@ $color-typography-whitesmoke: #DCDCDC;
 // Icons and images
 
 // Media queries for responsive layout
-$min-mobile-size: 320px;
+$min-mobile-size: 240px;
 $max-mobile-size: 767px;
 $min-tablet-size: 768px;
 $max-tablet-size: 1024px;
@@ -143,22 +143,6 @@ $max-tablet-nexus-size: 960px;
   -webkit-flex-direction: $direction;
   flex-direction: $direction;
 }
-
-
-//media query for font-size
-@mixin responsiveFont($breakpoint, $fontSizePerc, $fontSizeRem)
-{
-  @if $breakpoint == "xxsmall"
-  {
-    @media (max-width: 1080px)
-    {
-      font-size: $fontSizePerc;
-      font-size: $fontSizeRem;
-    }
-
-  }
-}
-
 
 /* ----- Mobile phones and tablets ----- */
 /* https://davidwalsh.name/write-media-queries-sass */

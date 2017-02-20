@@ -147,7 +147,7 @@ time, mark, audio, video, picture {
 }
 
 /* ----- Tablets and phones ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .hvr-fade-red {
     background-color: #ff5252;
   }
@@ -447,7 +447,7 @@ time, mark, audio, video, picture {
 
 /* Breakpoints */
 /* ----- Mobile phones and tablets ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .column {
     width: 100%;
     height: 33.33%;
@@ -773,7 +773,7 @@ time, mark, audio, video, picture {
 
 /* Breakpoints */
 /* ----- Mobile phones and tablets ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .sidebar-and-posts-container {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -879,7 +879,7 @@ time, mark, audio, video, picture {
 
 /* Breakpoints */
 /* ----- Mobile phones and tablets ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .sidebar-container {
     width: 100%;
     height: auto;
@@ -1020,7 +1020,7 @@ code {
 
 /* Breakpoints */
 /* ----- Tablets and phones ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .blog-post {
     font-size: 2rem;
   }
@@ -1124,7 +1124,7 @@ code {
 
 /* breakpoints */
 /* ----- Mobile phones and tablets ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .content-overview-posts {
     width: 100%;
     border-bottom: 1px solid #DCDCDC;
@@ -1306,7 +1306,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ----- Tablets and phones ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   body::-webkit-scrollbar {
     width: 1em;
   }
@@ -1374,7 +1374,7 @@ a {
 
 /* Breakpoints */
 /* ----- Mobile phones and tablets ----- */
-@media (min-width: 320px) and (max-width: 767px) and (min-height: 320px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 240px) and (max-width: 767px) and (min-height: 240px) and (max-height: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .content-container-frontpage {
     -webkit-flex-direction: column;
     flex-direction: column;
