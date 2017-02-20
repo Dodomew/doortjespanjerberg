@@ -42,9 +42,9 @@
 
             <a href="<?php echo get_home_url(); ?>">
 
-              <figure> <!-- Circle, triangle and square logo icon -->
+              <figure> <!-- Logo -->
 
-                <img src="<?php bloginfo('template_directory');?>/images/icons/spanjerberg_portfolio_icon_logo_circleSquareTriangle.svg" alt="Circle, triangle and square logo">
+                <img src="<?php bloginfo('template_directory');?>/images/icons/DoortjeSpanjerberg_Logo.svg" alt="Circular icon with two abstract cats">
 
               </figure>
 

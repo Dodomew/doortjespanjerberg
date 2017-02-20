@@ -43,11 +43,12 @@
 .content-header-right figure
 {
   height: 100%;
+  @include displayFlex(center, center, row);
 }
 
 .content-header-right figure img
 {
-  height: 100%;
+  height: 80%;
   width: 100%;
 }
 
