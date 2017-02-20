@@ -10,9 +10,6 @@
   font-size: 200%;
   font-size: 2rem;
   line-height: 2em;
-  //@include respond-to(xxsmall, 100%, auto);
-  //@include respond-to(xsmall, 100%, auto);
-  @include responsiveFont(xxsmall, 100%, 1rem);
 }
 
 .sidebar-content-container
@@ -64,63 +61,76 @@
   transform: scale(1.1);
 }
 
-/* breakpoints */
+/* Breakpoints */
+
 /* ----- Mobile phones and tablets ----- */
-@media screen
-  and (min-width: 320px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  {
-    .sidebar-container
-    {
-      width: 100%;
-      height: auto;
-      margin-bottom: 2.5%;
-      margin-bottom: 2.5vh;
-    }
 
-    .sidebar-content-social-container figure img
-    {
-      width: 25%;
-    }
-  }
-
-/* ----- Tablets and their landscape mode ----- */
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  {
-    .sidebar-container
-    {
-      width: 100%;
-      height: auto;
-      margin-bottom: 2.5%;
-      margin-bottom: 2.5vh;
-    }
-
-    .sidebar-content-social-container figure img
-    {
-      width: 25%;
-    }
-  }
-
-
-/*
-@media screen and (max-width: 1080px)
+@include responsiveLayoutMobile
 {
   .sidebar-container
   {
-    float: none;
     width: 100%;
     height: auto;
     margin-bottom: 2.5%;
     margin-bottom: 2.5vh;
+    font-size: 1.5rem;
   }
 
   .sidebar-content-social-container figure img
   {
-    width: 25%;
+    width: 33.33%;
   }
 }
-*/
+
+@include responsiveLayoutTablet
+{
+  .sidebar-container
+  {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
+    font-size: 1.5rem;
+  }
+
+  .sidebar-content-social-container figure img
+  {
+    width: 33.33%;
+  }
+}
+
+/* ----- Tablets and their landscape mode ----- */
+
+@include responsiveLayoutBigTablet
+{
+  .sidebar-container
+  {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
+    font-size: 3rem;
+  }
+
+  .sidebar-content-social-container figure img
+  {
+    width: 33.33%;
+  }
+}
+
+@include responsiveLayoutNexusSeven
+{
+  .sidebar-container
+  {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
+    font-size: 2rem;
+  }
+
+  .sidebar-content-social-container figure img
+  {
+    width: 33.33%;
+  }
+}

@@ -79,6 +79,61 @@
 
   }
 
+/* ----- Version 3 ----- */
+/* https://davidwalsh.name/write-media-queries-sass */
+
+/* Mobile phones */
+@mixin responsiveLayoutMobile()
+{
+  @media (min-width: #{$min-mobile-size})
+    and (max-width: #{$max-mobile-size})
+    and (min-height: #{$min-mobile-size})
+    and (max-height: #{$max-mobile-size})
+    and (-webkit-min-device-pixel-ratio: 1)
+    {
+      @content;
+    }
+}
+
+/* Normal tablets */
+@mixin responsiveLayoutTablet
+{
+  @media (min-width: #{$min-tablet-size})
+    and (max-width: #{$max-tablet-size})
+    and (min-height: #{$min-tablet-size})
+    and (max-height: #{$max-tablet-size})
+    and (-webkit-min-device-pixel-ratio: 1)
+  {
+    @content;
+  }
+}
+
+/* Big tablets and tablets in landscape mode */
+@mixin responsiveLayoutBigTablet()
+{
+  @media (min-width: #{$min-tablet-size})
+    and (max-width: #{$max-landscape-tablet-size})
+    and (min-height: #{$min-tablet-size})
+    and (max-height: #{$max-landscape-tablet-size})
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      @content;
+    }
+}
+
+/* Nexus 7 */
+@mixin responsiveLayoutNexusSeven()
+{
+  @media (min-width: #{$min-tablet-nexus-size})
+    and (max-width: #{$max-tablet-nexus-size})
+    and (min-height: #{$min-tablet-nexus-size})
+    and (max-height: #{$max-tablet-nexus-size})
+    and (-webkit-min-device-pixel-ratio: 1)
+  {
+    @content;
+  }
+}
+
 
 /* https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports */
 /* http://dpi.lv/#21″ */

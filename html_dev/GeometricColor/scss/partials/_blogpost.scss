@@ -101,47 +101,105 @@ code
   transform:scale(1.05);
 }
 
-/* breakpoints */
-/* ----- Mobile phones and tablets ----- */
-@media screen
-  and (min-width: 320px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1)
-  {
-    .blog-thumbnail
-    {
-      height: 128px;
-    }
+/* Breakpoints */
 
-    .image-overlay
-    {
-      line-height: 128px;
-    }
-  }
-
-/* ----- Tablets and their landscape mode ----- */
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  {
-    .blog-thumbnail
-    {
-      height: 128px;
-    }
-
-    .image-overlay
-    {
-      line-height: 128px;
-    }
-  }
-
-/*
-@media screen and (max-width: 1024px)
+/* ----- Tablets and phones ----- */
+@include responsiveLayoutMobile
 {
+  .blog-post
+  {
+    font-size: 2rem;
+  }
+
   .blog-thumbnail
   {
     height: 128px;
   }
+
+  .image-overlay
+  {
+    line-height: 128px;
+  }
+
+  .blog-thumbnail img
+  {
+    width: 100%;
+    height: auto;
+  }
 }
-*/
+
+@include responsiveLayoutTablet
+{
+  .blog-post
+  {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .blog-thumbnail
+  {
+    height: 192px;
+  }
+
+  .image-overlay
+  {
+    line-height: 192px;
+  }
+
+  .blog-thumbnail img
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ----- Tablets and their landscape mode ----- */
+@include responsiveLayoutBigTablet
+{
+  .blog-post
+  {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  .blog-thumbnail
+  {
+    height: 256px;
+  }
+
+  .image-overlay
+  {
+    line-height: 256px;
+  }
+
+  .blog-thumbnail img
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include responsiveLayoutNexusSeven
+{
+  .blog-post
+  {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .blog-thumbnail
+  {
+    height: 192px;
+  }
+
+  .image-overlay
+  {
+    line-height: 192px;
+  }
+
+  .blog-thumbnail img
+  {
+    width: 100%;
+    height: auto;
+  }
+}

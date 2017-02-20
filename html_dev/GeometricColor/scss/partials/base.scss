@@ -1,12 +1,12 @@
 //the base for doortjespanjerberg.com - mixins, variables, color, typography
 
-//Font import
+// Font import
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 
-//Font variables
+// Font variables
 $font-normal: 'Roboto', sans-serif;
 
-//Colors used as background throughout website
+// Colors used as background throughout website
 $color-background-frontpage: rgb(20,20,20);
 $color-background-red: rgb(255,82,82);
 $color-background-red-onHover: rgb(229,57,53);
@@ -19,12 +19,22 @@ $color-background-green-onHover: rgb(76,175,80);
 $color-background-blue: #2196F3;
 $color-background-blue-onHover: #42A5F5;
 
-//Colors used for typography or borders
+// Colors used for typography or borders
 $color-typography-darkgrey: darkgrey;
 $color-typography-white: #FAFAFA;
 $color-typography-whitesmoke: #DCDCDC;
 
-//Icons and images
+// Icons and images
+
+// Media queries for responsive layout
+$min-mobile-size: 320px;
+$max-mobile-size: 767px;
+$min-tablet-size: 768px;
+$max-tablet-size: 1024px;
+$min-landscape-tablet-size: 1025px;
+$max-landscape-tablet-size: 1366px;
+$min-tablet-nexus-size: 600px;
+$max-tablet-nexus-size: 960px;
 
 // image-url arguments:
 // $path: path relative to images directory in config.rb
@@ -134,53 +144,7 @@ $color-typography-whitesmoke: #DCDCDC;
   flex-direction: $direction;
 }
 
-//media query for blog post thumbnail
-/*@mixin respond-to($breakpoint, $width, $height)
-{
-  @if $breakpoint == "xxsmall"
-  {
-    @media (min-width: 320px) and (max-width: 480px)
-    {
-      width: $width;
-      height: $height;
-    }
-  }
-  @if $breakpoint == "xsmall"
-  {
-    @media (min-width: 480px) and (max-width: 766px)
-    {
-      width: 320px;
-      height: 180px;
-    }
-  }
-  @if $breakpoint == "small"
-  {
-    @media (min-width: 767px) and (max-width: 991px)
-    {
-      width: 580px;
-      height: 300px;
-    }
-  }
 
-  @else if $breakpoint == "medium"
-  {
-    @media (min-width: 992px) and (max-width: 1199px)
-    {
-      width: 720px;
-      height: 405px;
-    }
-  }
-
-  @else if $breakpoint == "large"
-  {
-    @media (min-width: 1200px) and (max-width: 1600px)
-    {
-      width: 848px;
-      height: 480px;
-    }
-  }
-}
-*/
 //media query for font-size
 @mixin responsiveFont($breakpoint, $fontSizePerc, $fontSizeRem)
 {
@@ -191,12 +155,131 @@ $color-typography-whitesmoke: #DCDCDC;
       font-size: $fontSizePerc;
       font-size: $fontSizeRem;
     }
-    /*
-    @media screen and (max-width: 1080px)
+
+  }
+}
+
+
+/* ----- Mobile phones and tablets ----- */
+/* https://davidwalsh.name/write-media-queries-sass */
+
+/* Responsive Layout design of Frontpage */
+@mixin responsiveLayoutFrontpage
+{
+  .column
+  {
+    width: 100%;
+    height: 33.33%;
+    padding: 0 0 0 0;
+  }
+
+  .column-images.column-float
+  {
+    display: none;
+  }
+
+  .title-page
+  {
+    height: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .icon-container
+  {
+    width: 50%;
+    height: 100%;
+  }
+
+  .frontpage-category-title
+  {
+    width: 50%;
+  }
+
+  .content-container-frontpage
+  {
+    flex-direction: column;
+  }
+
+  .title-page-rectangle
+  {
+    display: none;
+  }
+
+  #about-me-icon
+  {
+    border-bottom: 0px solid white;
+  }
+
+  .mobile-thumbnail-container
+  {
+    display: block;
+  }
+
+  .column-thumbnail-container:hover .column-thumbnail img
+  {
+    -webkit-transform: scale(1);
+    transform:scale(1);
+  }
+
+  .column-thumbnail-container
+  {
+    height: 100%;
+  }
+
+  .column:active > .image-overlay
+  {
+    opacity: 1;
+  }
+}
+
+/* Mobile phones */
+@mixin responsiveLayoutMobile
+{
+  @media (min-width: #{$min-mobile-size})
+    and (max-width: #{$max-mobile-size})
+    and (min-height: #{$min-mobile-size})
+    and (max-height: #{$max-mobile-size})
+    and (-webkit-min-device-pixel-ratio: 1)
     {
-      font-size: $fontSizePerc;
-      font-size: $fontSizeRem;
+      @content;
     }
-    */
+}
+
+/* Normal tablets */
+@mixin responsiveLayoutTablet
+{
+  @media (min-width: #{$min-tablet-size})
+    and (max-width: #{$max-tablet-size})
+    and (min-height: #{$min-tablet-size})
+    and (max-height: #{$max-tablet-size})
+    and (-webkit-min-device-pixel-ratio: 1)
+  {
+    @content;
+  }
+}
+
+/* Big tablets and tablets in landscape mode */
+@mixin responsiveLayoutBigTablet()
+{
+  @media (min-width: #{$min-tablet-size})
+    and (max-width: #{$max-landscape-tablet-size})
+    and (min-height: #{$min-tablet-size})
+    and (max-height: #{$max-landscape-tablet-size})
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      @content;
+    }
+}
+
+/* Nexus 7 */
+@mixin responsiveLayoutNexusSeven()
+{
+  @media (min-width: #{$min-tablet-nexus-size})
+    and (max-width: #{$max-tablet-nexus-size})
+    and (min-height: #{$min-tablet-nexus-size})
+    and (max-height: #{$max-tablet-nexus-size})
+    and (-webkit-min-device-pixel-ratio: 1)
+  {
+    @content;
   }
 }

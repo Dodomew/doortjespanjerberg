@@ -32,7 +32,6 @@
   font-weight: 400;
   font-size: 800%;
   font-size: 8rem;
-  @include responsiveFont(xxsmall, 400%, 4rem);
 }
 
 .content-header-right
@@ -60,29 +59,62 @@
   @include displayFlex(space-around, flex-start, row);
 }
 
-/* breakpoints */
+/* Breakpoints */
+
 /* ----- Mobile phones and tablets ----- */
-@media screen
-  and (min-width: 320px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1)
+
+@include responsiveLayoutMobile
+{
+  .sidebar-and-posts-container
   {
-    .sidebar-and-posts-container
-    {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
 
-/* ----- Tablets and their landscape mode ----- */
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  .content-header-left h1
   {
-    .sidebar-and-posts-container
-    {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
+    font-size: 3rem;
   }
+}
+
+@include responsiveLayoutTablet
+{
+  .sidebar-and-posts-container
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .content-header-left h1
+  {
+    font-size: 5rem;
+  }
+}
+
+@include responsiveLayoutBigTablet
+{
+  .sidebar-and-posts-container
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .content-header-left h1
+  {
+    font-size: 7rem;
+  }
+}
+
+@include responsiveLayoutNexusSeven
+{
+  .sidebar-and-posts-container
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .content-header-left h1
+  {
+    font-size: 6rem;
+  }
+}

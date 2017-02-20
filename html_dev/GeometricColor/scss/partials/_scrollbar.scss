@@ -8,25 +8,36 @@ body::-webkit-scrollbar-thumb
   background-color: rgba(50,50,50,0.5);
 }
 
-@media screen
-  and (min-width: 320px)
-  and (max-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1)
+/* ----- Tablets and phones ----- */
+@include responsiveLayoutMobile
+{
+  body::-webkit-scrollbar
   {
-    body::-webkit-scrollbar
-    {
-      width: 1em;
-    }
+    width: 1em;
   }
+}
+
+@include responsiveLayoutTablet
+{
+  body::-webkit-scrollbar
+  {
+    width: 1em;
+  }
+}
 
 /* ----- Tablets and their landscape mode ----- */
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
+@include responsiveLayoutBigTablet
+{
+  body::-webkit-scrollbar
   {
-    body::-webkit-scrollbar
-    {
-      width: 1em;
-    }
+    width: 1em;
   }
+}
+
+@include responsiveLayoutNexusSeven
+{
+  body::-webkit-scrollbar
+  {
+    width: 1em;
+  }
+}
