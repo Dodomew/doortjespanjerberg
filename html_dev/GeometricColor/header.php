@@ -42,9 +42,9 @@
 
             <a href="<?php echo get_home_url(); ?>">
 
-              <figure> <!-- Logo -->
+              <figure class="image-hover-scale-up"> <!-- Logo -->
 
-                <img src="<?php bloginfo('template_directory');?>/images/icons/DoortjeSpanjerberg_Logo.svg" alt="Circular icon with two abstract cats">
+                <img src="<?php bloginfo('template_directory');?>/images/icons/DoortjeSpanjerberg_LogoName.svg" alt="Circular icon with two abstract cats">
 
               </figure>
 

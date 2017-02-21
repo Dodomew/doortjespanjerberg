@@ -30,13 +30,11 @@
     // Support Featured Images
     add_theme_support( 'post-thumbnails' );
     //Note: 'true' enables hard cropping so each image is exactly those dimensions and automatically cropped
-    /*add_image_size( 'feature-image', 960, 540, true );
-    add_image_size( 'largethumb', 640, 360 , true );
-    add_image_size( 'medium-thumb', 480, 320, true );
-    add_image_size( 'small-thumb', 320, 240, true );
-    */
-    add_image_size( 'medium-thumb', 512, 256, true );
-    
+    add_image_size( 'category-thumb-large', 1024, 9999 ); // 300 pixels wide (and unlimited height)
+    add_image_size( 'category-thumb-medium', 768, 9999 ); // 300 pixels wide (and unlimited height)
+    add_image_size( 'category-thumb-small', 512, 9999 ); // 300 pixels wide (and unlimited height)
+    add_image_size( 'category-thumb-xsmall', 256, 9999 ); // 300 pixels wide (and unlimited height)
+
     //set x number of posts per page
     function set_posts_per_page( $query ) {
       if ( !is_admin() && $query->is_main_query() ) {
