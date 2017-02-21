@@ -34,25 +34,41 @@
 
     <figure class="image-hover-scale-up">
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/facebook_logo_white.svg" alt="facebook white logo">
+      <a href="https://www.facebook.com/doortje.spanjerberg">
+
+        <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/facebook_logo_white.svg" alt="facebook white logo">
+
+      </a>
 
     </figure>
 
     <figure class="image-hover-scale-up">
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/github_logo_white.svg" alt="github white logo">
+      <a href="https://github.com/Dodomew">
+
+        <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/github_logo_white.svg" alt="github white logo">
+
+      </a>
 
     </figure>
 
     <figure class="image-hover-scale-up">
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/instagram_logo_white.svg" alt="instagram white logo">
+      <a href="https://www.instagram.com/_dodomew_/">
+
+        <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/instagram_logo_white.svg" alt="instagram white logo">
+
+      </a>
 
     </figure>
 
     <figure class="image-hover-scale-up">
 
-      <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/mail_logo_white.svg" alt="mail white logo">
+      <a href="mailto:dodomew@gmail.com?subject=Hi%20Doortje" target="_blank">
+
+        <img src="<?php bloginfo('template_directory');?>/images/icons/socialIcons/mail_logo_white.svg" alt="mail white logo">
+
+      </a>
 
     </figure>
 
