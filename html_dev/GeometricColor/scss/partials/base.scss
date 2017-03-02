@@ -1,7 +1,8 @@
 //the base for doortjespanjerberg.com - mixins, variables, color, typography
 
 // Font import
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700);
 
 // Font variables
 $font-normal: 'Roboto', sans-serif;
@@ -42,10 +43,6 @@ $max-tablet-nexus-size: 960px;
 // $cache-buster: When set to `false` no cache buster will be used (i.e. `?313420982`)
 //$icon-spritesheet_165: background-image: url('imagesOnSite/Site_Icons_Spritesheet_165.png', false, false);
 
-@import url(/imagesOnSite/Site_Icons_Spritesheet_165.png);
-@import url(/imagesOnSite/Site_Icons_Spritesheet_165_64.png);
-@import url(/imagesOnSite/Site_Icons_Spritesheet_165_32.png);
-
 //mixins
 @mixin content-body($color)
 {
@@ -68,20 +65,6 @@ $max-tablet-nexus-size: 960px;
     z-index: 1;
     text-align: center;
     background-color: $background-color;
-}
-
-@mixin footer-icon($background-image, $background-positionX, $background-positionY, $icon-size)
-{
-    background-image: url($background-image);
-    background-position: $background-positionX $background-positionY;
-    width: $icon-size;
-    height: $icon-size;
-    background-repeat: no-repeat;
-    display: inline-block;
-    z-index: 1;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    z-index: 10;
 }
 
 @mixin column-rectangle($rectangle-color)
@@ -142,6 +125,14 @@ $max-tablet-nexus-size: 960px;
   align-items: $alignItems;
   -webkit-flex-direction: $direction;
   flex-direction: $direction;
+}
+
+@mixin headerSize($fontSize)
+{
+  font-size: $fontSize;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* ----- Mobile phones and tablets ----- */

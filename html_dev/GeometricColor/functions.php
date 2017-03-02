@@ -38,7 +38,7 @@
     //set x number of posts per page
     function set_posts_per_page( $query ) {
       if ( !is_admin() && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', '5' );
+        $query->set( 'posts_per_page', '-1' );
       }
     }
     add_action( 'pre_get_posts', 'set_posts_per_page');

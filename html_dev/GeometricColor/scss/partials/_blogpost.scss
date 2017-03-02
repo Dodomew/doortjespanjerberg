@@ -10,8 +10,18 @@
   margin-bottom: 5vh;
   overflow: hidden;
   font-size: 2rem;
-  font-weight: 300;
   line-height: 3rem;
+  font-weight: 300;
+}
+
+.blog-post strong
+{
+  font-weight: 700;
+}
+
+.blog-post em
+{
+  font-style: italic;
 }
 
 pre
@@ -31,6 +41,36 @@ code
 {
   width: 100%;
   margin: auto;
+}
+
+.post-content-container h1
+{
+  @include headerSize(5rem);
+}
+
+.post-content-container h2
+{
+  @include headerSize(4rem);
+}
+
+.post-content-container h3
+{
+  @include headerSize(3rem);
+}
+
+.post-content-container h4
+{
+  @include headerSize(2rem);
+}
+
+.post-content-container h5
+{
+  @include headerSize(1.5rem);
+}
+
+.post-content-container h6
+{
+  @include headerSize(1rem);
 }
 
 .post-content-container p

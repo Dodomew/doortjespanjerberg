@@ -65,7 +65,7 @@
 {
   position: relative;
   width: 100%;
-  height: 256px;
+  height: 320px;
   margin: auto;
   overflow: hidden;
 }
@@ -104,19 +104,9 @@
     @include column-rectangle($color-background-red);
 }
 
-#rectangle-gold
-{
-    @include column-rectangle($color-background-yellow);
-}
-
 #rectangle-blue
 {
     @include column-rectangle($color-background-blue);
-}
-
-#rectangle-purple
-{
-    @include column-rectangle($color-background-purple);
 }
 
 #rectangle-green
@@ -174,26 +164,6 @@
 {
   display: none;
   height: 100%;
-}
-
-#about-me-icon
-{
-    @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-384px), 128px);
-}
-
-#two-dee-icon
-{
-    @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-512px), 128px);
-}
-
-#three-dee-icon
-{
-   @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-640px), 128px);
-}
-
-#webdesign-icon
-{
-    @include icon-container("imagesOnSite/Site_Icons_Spritesheet_165.png", 0px, (-768px), 128px);
 }
 
 .icon-container
