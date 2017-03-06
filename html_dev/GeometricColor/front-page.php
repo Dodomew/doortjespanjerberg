@@ -127,80 +127,70 @@
 
         <a href="category/webdev/">
 
-              <article class="column hvr-fade-green">
+            <article class="column hvr-fade-green">
 
-                      <header class="title-page">
+                    <header class="title-page">
 
-                        <figure class="title-page-rectangle rectangle-green"></figure>
+                      <figure class="title-page-rectangle rectangle-green"></figure>
+
+                        <figure class="mobile-thumbnail-container">
+
+                          <?php
+
+                              $catquery = new WP_Query( 'cat=3&posts_per_page=1' );
+
+                              while($catquery->have_posts()) : $catquery->the_post();
+
+                          ?>
+
+                          <section class="column-thumbnail-container">
+
+                            <?php if(has_post_thumbnail()): ?>
+
+                              <div class="column-thumbnail">
+
+                                <picture>
+
+                                  <?php the_post_thumbnail() ?>
+
+                                </picture>
+
+                              </div>
+
+                              <?php endif; ?>
+
+                           </section>
+
+                          <?php
+
+                              endwhile;
+                          ?>
+
+                        </figure>
+
+                      <header class="frontpage-category-title">
+
+                        <h3>Webdevelopment</h3>
 
                         <figure class="icon-container">
 
-                          <figure class="category-icon">
+                          <figure class="image-hover-scale-up">
 
-                          </figure>
-
-                          <figure class="mobile-thumbnail-container">
-
-                            <?php
-
-                                $catquery = new WP_Query( 'cat=3&posts_per_page=1' );
-
-                                while($catquery->have_posts()) : $catquery->the_post();
-
-                            ?>
-
-                            <section class="column-thumbnail-container">
-
-                              <?php if(has_post_thumbnail()): ?>
-
-                                <div class="column-thumbnail">
-
-                                  <picture>
-
-                                    <?php the_post_thumbnail() ?>
-
-                                  </picture>
-
-                                </div>
-
-                                <?php endif; ?>
-
-                             </section>
-
-                            <?php
-
-                                endwhile;
-                            ?>
+                          <img src="<?php bloginfo('template_directory');?>/images/icons/Webdesign_Iconx100.svg" alt="Icon of a screen with HTML and CSS displayed">
 
                           </figure>
 
                         </figure>
 
-                        <header class="frontpage-category-title">
-
-                          <h3>Webdevelopment</h3>
-
-                          <figure class="icon-container">
-
-                            <figure class="image-hover-scale-up">
-
-                            <img src="<?php bloginfo('template_directory');?>/images/icons/Webdesign_Iconx100.svg" alt="Icon of a screen with HTML and CSS displayed">
-
-                            </figure>
-
-                          </figure>
-
-                        </header>
-
                       </header>
+
+                    </header>
 
                   <div class="column-images column-float">
 
                           <div class="column-hover">
 
                             <div id="rectangle-green"></div>
-
-                          <!--<a href="aboutMe.html"><div id="rectangle-red"></div></a>-->
 
                               <?php
 
@@ -249,51 +239,42 @@
 
                     <article class="column hvr-fade-blue">
 
-                            <header class="title-page">
+                          <header class="title-page">
 
-                              <figure class="title-page-rectangle rectangle-blue"></figure>
+                            <figure class="title-page-rectangle rectangle-blue"></figure>
 
-                              <figure class="icon-container">
+                              <figure class="mobile-thumbnail-container">
 
-                                <figure class="category-icon">
+                                <?php
 
+                                    $catquery = new WP_Query( 'cat=4&posts_per_page=1' );
 
-                                </figure>
+                                    while($catquery->have_posts()) : $catquery->the_post();
 
-                                <figure class="mobile-thumbnail-container">
+                                ?>
 
-                                  <?php
+                                <section class="column-thumbnail-container">
 
-                                      $catquery = new WP_Query( 'cat=4&posts_per_page=1' );
+                                  <?php if(has_post_thumbnail()): ?>
 
-                                      while($catquery->have_posts()) : $catquery->the_post();
+                                    <div class="column-thumbnail">
 
-                                  ?>
+                                      <picture>
 
-                                  <section class="column-thumbnail-container">
+                                        <?php the_post_thumbnail() ?>
 
-                                    <?php if(has_post_thumbnail()): ?>
+                                      </picture>
 
-                                      <div class="column-thumbnail">
+                                    </div>
 
-                                        <picture>
+                                    <?php endif; ?>
 
-                                          <?php the_post_thumbnail() ?>
+                                 </section>
 
-                                        </picture>
+                                <?php
 
-                                      </div>
-
-                                      <?php endif; ?>
-
-                                   </section>
-
-                                  <?php
-
-                                      endwhile;
-                                  ?>
-
-                                </figure>
+                                    endwhile;
+                                ?>
 
                               </figure>
 
