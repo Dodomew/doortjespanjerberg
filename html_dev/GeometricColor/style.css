@@ -194,8 +194,8 @@ time, mark, audio, video, picture {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   display: block;
-  -webkit-transform: translateY(70%);
-  transform: translateY(70%);
+  -webkit-transform: translateY(66.66%);
+  transform: translateY(66.66%);
 }
 
 .column-thumbnail-container {
@@ -306,6 +306,7 @@ time, mark, audio, video, picture {
 
 .icon-container {
   display: block;
+  text-align: center;
 }
 
 .frontpage-category-title {
@@ -314,6 +315,12 @@ time, mark, audio, video, picture {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.frontpage-category-title img {
+  width: 50%;
 }
 
 /* Breakpoints */
@@ -335,12 +342,12 @@ time, mark, audio, video, picture {
   }
 
   .icon-container {
-    width: 50%;
-    height: 100%;
+    display: none;
   }
 
   .frontpage-category-title {
     width: 50%;
+    margin-top: 0;
   }
 
   .content-container-frontpage {
@@ -357,6 +364,7 @@ time, mark, audio, video, picture {
 
   .mobile-thumbnail-container {
     display: block;
+    width: 50%;
   }
 
   .column-thumbnail-container:hover .column-thumbnail img {
@@ -398,12 +406,12 @@ time, mark, audio, video, picture {
   }
 
   .icon-container {
-    width: 50%;
-    height: 100%;
+    display: none;
   }
 
   .frontpage-category-title {
     width: 50%;
+    margin-top: 0;
   }
 
   .content-container-frontpage {
@@ -420,6 +428,7 @@ time, mark, audio, video, picture {
 
   .mobile-thumbnail-container {
     display: block;
+    width: 50%;
   }
 
   .column-thumbnail-container:hover .column-thumbnail img {
@@ -461,12 +470,12 @@ time, mark, audio, video, picture {
   }
 
   .icon-container {
-    width: 50%;
-    height: 100%;
+    display: none;
   }
 
   .frontpage-category-title {
     width: 50%;
+    margin-top: 0;
   }
 
   .content-container-frontpage {
@@ -483,6 +492,7 @@ time, mark, audio, video, picture {
 
   .mobile-thumbnail-container {
     display: block;
+    width: 50%;
   }
 
   .column-thumbnail-container:hover .column-thumbnail img {
@@ -524,12 +534,12 @@ time, mark, audio, video, picture {
   }
 
   .icon-container {
-    width: 50%;
-    height: 100%;
+    display: none;
   }
 
   .frontpage-category-title {
     width: 50%;
+    margin-top: 0;
   }
 
   .content-container-frontpage {
@@ -546,6 +556,7 @@ time, mark, audio, video, picture {
 
   .mobile-thumbnail-container {
     display: block;
+    width: 50%;
   }
 
   .column-thumbnail-container:hover .column-thumbnail img {
@@ -1128,6 +1139,7 @@ html, body {
 a {
   color: #FAFAFA;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*  FRONTPAGE */

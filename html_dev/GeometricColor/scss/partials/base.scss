@@ -161,13 +161,13 @@ $max-tablet-nexus-size: 960px;
 
   .icon-container
   {
-    width: 50%;
-    height: 100%;
+    display: none;
   }
 
   .frontpage-category-title
   {
     width: 50%;
+    margin-top: 0;
   }
 
   .content-container-frontpage
@@ -188,6 +188,7 @@ $max-tablet-nexus-size: 960px;
   .mobile-thumbnail-container
   {
     display: block;
+    width: 50%;
   }
 
   .column-thumbnail-container:hover .column-thumbnail img

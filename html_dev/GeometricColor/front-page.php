@@ -23,8 +23,6 @@
 
                           <figure class="title-page-rectangle rectangle-red"></figure>
 
-                          <figure class="icon-container">
-
                             <figure class="mobile-thumbnail-container">
 
                               <?php
@@ -60,11 +58,19 @@
 
                             </figure>
 
-                          </figure>
-
                           <header class="frontpage-category-title">
 
-                              <h3>About me</h3>
+                            <figure class="icon-container">
+
+                              <figure class="image-hover-scale-up">
+
+                                <img src="<?php bloginfo('template_directory');?>/images/icons/AboutMe_Icon.svg" alt="About me icon">
+
+                              </figure>
+
+                            </figure>
+
+                            <h3>Doortje's Ideas</h3>
 
                           </header>
 
@@ -172,7 +178,17 @@
 
                         <header class="frontpage-category-title">
 
-                            <h3>Webdev</h3>
+                          <h3>Webdevelopment</h3>
+
+                          <figure class="icon-container">
+
+                            <figure class="image-hover-scale-up">
+
+                            <img src="<?php bloginfo('template_directory');?>/images/icons/Webdesign_Iconx100.svg" alt="Icon of a screen with HTML and CSS displayed">
+
+                            </figure>
+
+                          </figure>
 
                         </header>
 
@@ -283,7 +299,17 @@
 
                               <header class="frontpage-category-title">
 
-                                  <h3>2D and 3D</h3>
+                                <h3>2D and 3D</h3>
+
+                                <figure class="icon-container">
+
+                                    <figure class="image-hover-scale-up">
+
+                                    <img src="<?php bloginfo('template_directory');?>/images/icons/2D_Iconx100.svg" alt="2D icon of an easel">
+
+                                  </figure>
+
+                                </figure>
 
                               </header>
 
@@ -294,8 +320,6 @@
                                 <div class="column-hover">
 
                                   <div id="rectangle-blue"></div>
-
-                                <!--<a href="aboutMe.html"><div id="rectangle-red"></div></a>-->
 
                                     <?php
 
